@@ -1,0 +1,27 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "proyecto final inmobiliaria team 5",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasiferox/G40-Cycle4-DAW-Team5.git"
+  },
+  "keywords": [
+    "nodejs",
+    "team5"
+  ],
+  "author": "Team 5 - The Assamblers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gasiferox/G40-Cycle4-DAW-Team5/issues"
+  },
+  "homepage": "https://github.com/gasiferox/G40-Cycle4-DAW-Team5#readme"
+}
