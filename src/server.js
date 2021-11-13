@@ -4,6 +4,7 @@ const app = express()
 const colors = require('colors')
 const mongoose = require('mongoose')
 require('dotenv').config()
+// Routes
 const userRoutes = require('./routes/user')
 
 
@@ -16,20 +17,13 @@ mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: 
     console.log(err)
 })
 
-// Routes
-
 
 // Middlewares
+app.use(express.json())
 app.use('/api', userRoutes)
 
 
-// index.html invoke
-
-
-// Schema Imports
-
-
-// CRUD
+// html invoke
 
 
 // Server launch
