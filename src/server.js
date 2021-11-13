@@ -14,7 +14,7 @@ mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: 
 })
 
 // CRUD
-
+//Investigar Crud Get
 
 // Server launch
 app.listen(PORT, () => {
