@@ -50,4 +50,6 @@ git push origin dev[i]
 
 ### Conexión a la base de datos `MongoDB`
 
+Utilizando el string de conexión dentro del `MongoDB`
+
 `connectionString = 'mongodb+srv://team5:<password>@clusterteam5.dix94.mongodb.net/inmobiliaria?retryWrites=true&w=majority'`
