@@ -109,3 +109,49 @@ Content-Type: application/json
 
 ### DELETE LOCATION
 DELETE http://localhost:7500/api/locations/61907fbb9569dfc8b50001e7 HTTP/1.1
+
+
+
+### PROPERTY ###
+
+### ADD PROPERTY
+POST http://localhost:7500/api/properties HTTP/1.1
+Content-Type: application/json
+
+{
+    "tipo": "Apartamento",
+    "ubicacion": ,
+    "area": 65.5,
+    "precio": 150000000,
+    "habitaciones": 3 ,
+    "baños": 2,
+    "parqueadero": true,
+    "descripcion": "Recien remodelado, pisos en ceramica y cocina integral",
+    "imagenes": ""
+}
+
+
+### GET ALL PROPERTIES
+GET http://localhost:7500/api/properties HTTP/1.1
+
+### GET PROPERTIES BY ID
+GET http://localhost:7500/api/properties/619008a559bfce4528bcdb72 HTTP/1.1
+
+### UPDATE A PROPERTY
+PUT http://localhost:7500/api/properties/619008a559bfce4528bcdb72 HTTP/1.1
+Content-Type: application/json
+
+{
+     "tipo": "Casa",
+    "ubicacion": " Villavicencio ",
+    "area": 90.5,
+    "precio": 180.000.000,
+    "habitaciones": 3 ,
+    "baños": 2,
+    "parqueadero": "si",
+    "descripcion": "Recien pintada, pisos en ceramica y cocina en marmol",
+    "imagenes": "blanca"
+}
+
+### DELETE PROPERTY
+DELETE http://localhost:7500/api/properties/61901c39084ce5ff87b7e063 HTTP/1.1
