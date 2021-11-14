@@ -11,15 +11,15 @@ const userRoutes = require('./routes/user')
 
 
 // DB Connection
-const connnectionString = process.env.MONGODB_URI
+const connnectionString = 'mongodb+srv://team5:team5.1234@clusterteam5.dix94.mongodb.net/inmobiliaria?retryWrites=true&w=majority'
 mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
     console.log(colors.yellow("mongodb connected"))
 }).catch((err) => {
-    console.log(colors.red("mongodb not connected"))
+    console.log(color.red("mongodb not connected"))
     console.log(err)
 })
 
-
+// CRUD
 // Middlewares
 app.use(express.json())
 app.use(express.static('src'))
