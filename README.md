@@ -1,4 +1,13 @@
-# G40 Cicle4 DAW Team 5
+# Grupo 40 - Cicle 4 - Desarollo Aplicaciones Web
+
+## The Assemblers -Team 5
+
+## Members:
+- Gustavo Romero - Leader
+- María Patricia Guevara - Admin
+- Freddy Alberto Herrera - Tester
+- Leonardo Jiménez - Soft Design
+- Juan Diego Varón - UI Design
 
 ## Proyecto Inmobiliaria
 
