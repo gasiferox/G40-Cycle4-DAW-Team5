@@ -7,6 +7,7 @@ require('dotenv').config()
 // Routes
 const userRoutes = require('./routes/user')
 const locationRoutes = require('./routes/location')
+const propertyRoutes = require('./routes/property')
 
 
 // DB Connection
@@ -24,6 +25,7 @@ app.use(express.json())
 app.use(express.static('src'))
 app.use('/api', userRoutes)
 app.use('/api', locationRoutes)
+app.use('/api', propertyRoutes)
 
 // html invoke
 /* const fs = require('fs')

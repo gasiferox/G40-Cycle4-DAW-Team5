@@ -123,7 +123,7 @@ Content-Type: application/json
     "ubicacion": ,
     "area": 65.5,
     "precio": 150000000,
-    "habitaciones": 3 ,
+    "habitaciones": 3,
     "baños": 2,
     "parqueadero": true,
     "descripcion": "Recien remodelado, pisos en ceramica y cocina integral",

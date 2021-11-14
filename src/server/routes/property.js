@@ -1,11 +1,11 @@
 const express = require('express')
-const router = express.router()
+const router = express.Router()
 const propertySchema = require('../models/property')
 
 //create property 
 router.post('/properties', (req, res) => {
     const property = propertySchema(req, body)
-    propertySchema.save().then((data)=> res.json(data)).catch((err) => res.json({message: err}))
+    property.save().then((data)=> res.json(data)).catch((err) => res.json({message: err}))
 } )
 
 //Get all properties
@@ -31,5 +31,6 @@ router.delete('/properties/:id', (req, res) => {
     const { id } = req.params
     propertySchema.deleteOne({_id: id}).then((data) => res.json(data)).catch((err) => res.json({message: err.message}))
 })
+
 
 module.exports = router

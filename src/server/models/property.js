@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
-const locationSchema = require('./location')
+const Schema = mongoose.Schema
+//const locationSchema = require('../models/location')
 
 const propertySchema = mongoose.Schema({
     tipo: {
@@ -7,7 +8,8 @@ const propertySchema = mongoose.Schema({
         required: true
     },
     ubicacion: {
-        type: locationSchema.Types.ObjectID,
+        type: Schema.ObjectId,
+        ref: 'Location',
         required: false
     },
     area: {
@@ -35,9 +37,9 @@ const propertySchema = mongoose.Schema({
         required: false
     },
     imagenes: { 
-        type: string,
+        type: String,
         required: false
     }
 })
 
-module.exports = mongoose.model('Property', propertySchema)
+module.exports = mongoose.model('Propertie', propertySchema)
