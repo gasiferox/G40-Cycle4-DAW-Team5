@@ -21,10 +21,19 @@ mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: 
 // Middlewares
 app.use(express.json())
 app.use('/api', userRoutes)
+app.use(express.static('src'))
 
 
 // html invoke
+const fs = require('fs')
+const path = require('path')
+const html_content_type = 'text/html'
 
+
+app.get('/', (req, res) => {
+    res.writeHead(200, {'Content-Type': html_content_type})
+    fs.createReadStream('./src/index.html').pipe(res)
+})
 
 // Server launch
 app.listen(PORT, () => {

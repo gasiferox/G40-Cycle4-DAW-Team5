@@ -29,7 +29,7 @@ router.put('/users/:id', (req, res) => {
 // Delete a user
 router.delete('/users/:id', (req, res) => {
     const {id} = req.params
-    userSchema.remove({_id: id}).then((data) => res.json(data)).catch((err) => res.json({message: err}))
+    userSchema.deleteOne({_id: id}).then((data) => res.json(data)).catch((err) => res.json({message: err}))
 })
 
 

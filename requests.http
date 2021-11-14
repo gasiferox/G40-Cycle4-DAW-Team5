@@ -47,4 +47,4 @@ Content-Type: application/json
 }
 
 ### DELETE USER
-DELETE http://localhost:7500/api/users/61900ccc93fbb9aad6449b17 HTTP/1.1
+DELETE http://localhost:7500/api/users/61901c39084ce5ff87b7e063 HTTP/1.1
