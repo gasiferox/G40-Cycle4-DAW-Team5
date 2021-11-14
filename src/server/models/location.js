@@ -16,6 +16,10 @@ const locationSchema = mongoose.Schema({
     vereda: {
         type: String,
         required: false
+    },
+    direccion: {
+        type: String,
+        required: true
     }
 })
 

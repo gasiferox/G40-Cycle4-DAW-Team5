@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
+const Location = mongoose.model('Location')
+
 //const locationSchema = require('../models/location')
 
 const propertySchema = mongoose.Schema({
@@ -10,7 +12,7 @@ const propertySchema = mongoose.Schema({
     ubicacion: {
         type: Schema.ObjectId,
         ref: 'Location',
-        required: false
+        required: true
     },
     area: {
         type: Number,

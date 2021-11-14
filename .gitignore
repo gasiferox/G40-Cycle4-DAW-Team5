@@ -118,10 +118,10 @@ dist
 .pnp.*
 
 # binaries
-.jpg
-.gif
-.tiff
-.png
+*.jpg
+*.gif
+*.tiff
+*.png
 
 # REST Client test
-.http
+*.http
