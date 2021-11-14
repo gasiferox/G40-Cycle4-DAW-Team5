@@ -4,6 +4,10 @@ const app = express()
 const colors = require('colors')
 const mongoose = require('mongoose')
 require('dotenv').config()
+// Routes
+const userRoutes = require('./routes/user')
+const locationRoutes = require('./routes/location')
+
 
 // DB Connection
 const connnectionString = process.env.MONGODB_URI
@@ -14,18 +18,27 @@ mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: 
     console.log(err)
 })
 
-// Routes
+
+// Middlewares
+app.use(express.json())
+app.use(express.static('src'))
+app.use('/api', userRoutes)
+app.use('/api', locationRoutes)
+
+// html invoke
+/* const fs = require('fs')
+const path = require('path')
+const html_content_type = 'text/html'
 
 
-// index.html invoke
-
-
-// Schema Imports
-
-
-// CRUD
-
+<<<<<<< HEAD:src/server.js
 // Inicio de proyecto
+=======
+app.get('/', (req, res) => {
+    res.writeHead(200, {'Content-Type': html_content_type})
+    fs.createReadStream('./src/index.html').pipe(res)
+}) */
+>>>>>>> main:src/server/server.js
 
 // Server launch
 app.listen(PORT, () => {
