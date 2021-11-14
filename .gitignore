@@ -122,3 +122,6 @@ dist
 .gif
 .tiff
 .png
+
+# REST Client test
+.http
