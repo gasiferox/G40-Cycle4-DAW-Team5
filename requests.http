@@ -1,0 +1,111 @@
+### USERS ###
+
+### ADD USER
+POST http://localhost:7500/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombres": "Gustavo",
+    "apellidos": "Romero",
+    "documento": "78965452631",
+    "telefono": "321456789",
+    "email": "gasifero@gmail.com",
+    "clave": "123456"
+},
+{
+    "nombres": "Maria Patricia",
+    "apellidos": "Guevara",
+    "documento": "45698745",
+    "telefono": "3214569874",
+    "email": "mariapatricia@gmail.com",
+    "clave": "452147"
+},
+{
+    "nombres": "Leonardo",
+    "apellidos": "Rivera",
+    "documento": "6543982",
+    "telefono": "786453",
+    "email": "leoil@gmail.com",
+    "clave": "736352"
+}
+
+### GET ALL USERS
+GET http://localhost:7500/api/users HTTP/1.1
+
+### GET USER BY ID
+GET http://localhost:7500/api/users/619008a559bfce4528bcdb72 HTTP/1.1
+
+### UPDATE A USER
+PUT http://localhost:7500/api/users/619008a559bfce4528bcdb72 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombres": "Gustavo",
+    "apellidos": "Romero Nocua",
+    "documento": "78965452631",
+    "telefono": "321456789",
+    "email": "gasifero@gmail.com",
+    "clave": "123456"
+}
+
+### DELETE USER
+DELETE http://localhost:7500/api/users/61901c39084ce5ff87b7e063 HTTP/1.1
+
+### LOCATIONS ###
+
+POST http://localhost:7500/api/locations HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "departamento": "Risaralda",
+    "ciudad": "Pereira",
+    "zona": "Este",
+    "vereda": "Tribunas"
+},
+{
+    "departamento": "Meta",
+    "ciudad": "Villavicencio",
+    "zona": "Sur",
+    "vereda": ""
+},
+{
+    "departamento": "Caquetá",
+    "ciudad": "Florencia",
+    "zona": "Occidente",
+    "vereda": ""
+},
+{
+    "departamento": "Quindio",
+    "ciudad": "Armenia",
+    "zona": "Centro",
+    "vereda": ""
+},
+{
+    "departamento": "Antioquia",
+    "ciudad": "Medellín",
+    "zona": "Sur",
+    "vereda": ""
+}
+
+### GET ALL LOCATIONS
+GET http://localhost:7500/api/locations HTTP/1.1
+
+### GET LOCATION BY ID
+GET http://localhost:7500/api/locations/61907f8b9569dfc8b50001e1 HTTP/1.1
+
+### UPDATE LOCATION
+PUT http://localhost:7500/api/locations/61907fab9569dfc8b50001e5 HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "departamento": "Quindío",
+    "ciudad": "Armenia",
+    "zona": "Centro",
+    "vereda": ""
+}
+
+
+### DELETE LOCATION
+DELETE http://localhost:7500/api/locations/61907fbb9569dfc8b50001e7 HTTP/1.1
