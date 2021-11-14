@@ -52,4 +52,8 @@ git push origin dev[i]
 
 Utilizando el string de conexión dentro del `MongoDB`
 
-`connectionString = 'mongodb+srv://team5:<password>@clusterteam5.dix94.mongodb.net/inmobiliaria?retryWrites=true&w=majority'`
+La conexión se va a generar medianta la creación del archivo `.env` ubicado en la raiz del proyecto y dentro de este estará incluida la cadena de conexión dentro de la variable `MONGODB_URI`
+
+```
+MONGODB_URI = ''
+```
