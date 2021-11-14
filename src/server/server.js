@@ -5,8 +5,9 @@ const colors = require('colors')
 const mongoose = require('mongoose')
 require('dotenv').config()
 // Routes
-const userRoutes = require('./routes/user')
 const locationRoutes = require('./routes/location')
+const propertyRoutes = require('./routes/property')
+const userRoutes = require('./routes/user')
 
 
 // DB Connection
@@ -22,8 +23,10 @@ mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: 
 // Middlewares
 app.use(express.json())
 app.use(express.static('src'))
-app.use('/api', userRoutes)
 app.use('/api', locationRoutes)
+app.use('/api', propertyRoutes)
+app.use('/api', userRoutes)
+
 
 // html invoke
 /* const fs = require('fs')

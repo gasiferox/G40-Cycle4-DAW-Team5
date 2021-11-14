@@ -109,3 +109,59 @@ Content-Type: application/json
 
 ### DELETE LOCATION
 DELETE http://localhost:7500/api/locations/61907fbb9569dfc8b50001e7 HTTP/1.1
+
+
+
+
+### ADD PROPERTYS
+POST http://localhost:7500/api/propertys HTTP/1.1
+Content-Type: application/json
+
+{
+    "type": "Apartamento",
+     "location": "ZF CARRERA 1, Bogotá",
+      "area": "154", 
+      "price": "400.000", 
+      "rooms": "3",
+      "bathrooms": "2", 
+      "parking": "1", 
+      "description": "blanco de puertas negras", 
+      "images": "https://construccionesprisma.com.co/images/listing_photos/22_0001pradoalto01fachada.jpg"
+},
+{
+    "type": "Apartamento",
+     "location": "ZF CARRERA 1, Bogotá",
+      "area": "154", 
+      "price": "400.000", 
+      "rooms": "3",
+      "bathrooms": "2", 
+      "parking": "1", 
+      "description": "blanco de puertas negras", 
+      "images": "https://construccionesprisma.com.co/images/listing_photos/22_imponenteacceso2.jpg"
+}
+
+
+### GET ALL PROPERTYSS
+GET http://localhost:7500/api/propertys HTTP/1.1
+
+### GET PROPERTYS BY ID
+GET http://localhost:7500/api/propertys/619008a559bfce4528bcdb72 HTTP/1.1
+
+### UPDATE A PROPERTYS
+PUT http://localhost:7500/api/propertys/619008a559bfce4528bcdb72 HTTP/1.1
+Content-Type: application/json
+
+{
+    "type": "Apartamento",
+     "location": "ZF CARRERA 1, Bogotá",
+      "area": "154", 
+      "price": "400.000", 
+      "rooms": "3",
+      "bathrooms": "2", 
+      "parking": "1", 
+      "description": "blanco de puertas negras", 
+      "images": "https://construccionesprisma.com.co/images/listing_photos/22_imponenteacceso2.jpg"
+}
+
+### DELETE PROPERTYS
+DELETE http://localhost:7500/api/propertys/61901c39084ce5ff87b7e063 HTTP/1.1
