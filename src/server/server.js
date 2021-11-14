@@ -31,14 +31,10 @@ const path = require('path')
 const html_content_type = 'text/html'
 
 
-<<<<<<< HEAD:src/server.js
-// Inicio de proyecto
-=======
 app.get('/', (req, res) => {
     res.writeHead(200, {'Content-Type': html_content_type})
     fs.createReadStream('./src/index.html').pipe(res)
 }) */
->>>>>>> main:src/server/server.js
 
 // Server launch
 app.listen(PORT, () => {
