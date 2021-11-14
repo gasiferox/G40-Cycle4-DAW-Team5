@@ -1,17 +1,27 @@
-const PORT = 7500
+const PORT = process.env.PORT || 7500
 const express = require('express')
 const app = express()
 const colors = require('colors')
 const mongoose = require('mongoose')
+require('dotenv').config()
 
 // DB Connection
-const connnectionString = 'mongodb+srv://team5:team5.1234@clusterteam5.dix94.mongodb.net/inmobiliaria?retryWrites=true&w=majority'
+const connnectionString = process.env.MONGODB_URI
 mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
     console.log(colors.yellow("mongodb connected"))
 }).catch((err) => {
-    console.log(color.red("mongodb not connected"))
+    console.log(colors.red("mongodb not connected"))
     console.log(err)
 })
+
+// Routes
+
+
+// index.html invoke
+
+
+// Schema Imports
+
 
 // CRUD
 
