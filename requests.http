@@ -132,11 +132,11 @@ Content-Type: application/json
     "type": "Apartamento",
      "location": "ZF CARRERA 1, Bogotá",
       "area": "154", 
-      "price": "400.000", 
-      "rooms": "3",
-      "bathrooms": "2", 
-      "parking": "1", 
-      "description": "blanco de puertas negras", 
+      "price": "300.000", 
+      "rooms": "2",
+      "bathrooms": "1", 
+      "parking": "0", 
+      "description": "gris de puertas negras", 
       "images": "https://construccionesprisma.com.co/images/listing_photos/22_imponenteacceso2.jpg"
 }
 
@@ -145,10 +145,10 @@ Content-Type: application/json
 GET http://localhost:7500/api/propertys HTTP/1.1
 
 ### GET PROPERTYS BY ID
-GET http://localhost:7500/api/propertys/619008a559bfce4528bcdb72 HTTP/1.1
+GET http://localhost:7500/api/propertys/ HTTP/1.1
 
 ### UPDATE A PROPERTYS
-PUT http://localhost:7500/api/propertys/619008a559bfce4528bcdb72 HTTP/1.1
+PUT http://localhost:7500/api/propertys/ HTTP/1.1
 Content-Type: application/json
 
 {
@@ -164,4 +164,4 @@ Content-Type: application/json
 }
 
 ### DELETE PROPERTYS
-DELETE http://localhost:7500/api/propertys/61901c39084ce5ff87b7e063 HTTP/1.1
+DELETE http://localhost:7500/api/propertys/ HTTP/1.1
