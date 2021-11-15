@@ -7,7 +7,11 @@ require('dotenv').config()
 // Routes
 const userRoutes = require('./routes/user')
 const locationRoutes = require('./routes/location')
+<<<<<<< HEAD:src/server/server.js
 const prpertyRoutes = require('./routes/property')
+=======
+const propertyRoutes = require('./routes/property')
+>>>>>>> 37fb6ba77dbcac0e764714e0bdb2a20ab60ee33b:server/src/server.js
 
 
 // DB Connection
