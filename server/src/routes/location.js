@@ -10,7 +10,7 @@ router.post('/locations', (req, res) => {
 
 // Get all locations
 router.get('/locations', (req, res) => {
-    locationSchema.find().then((data) => res.json(data)).catch((err) => res.json({message: err}))
+    locationSchema.find().then((data) => res.json(data)).catch((err) => res)
 })
 
 // Get one location by id
