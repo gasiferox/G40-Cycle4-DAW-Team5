@@ -68,7 +68,7 @@ git push origin dev[i]
 
 Utilizando el string de conexión dentro del `MongoDB`
 
-La conexión se va a generar medianta la creación del archivo `.env` ubicado en la raiz del proyecto y dentro de este estará incluida la cadena de conexión dentro de la variable `MONGODB_URI`, la cual será suministrada por el edministrador del proyecto.
+La conexión se va a generar medianta la creación del archivo `.env` ubicado en la carpeta `/server` del proyecto y dentro de este estará incluida la cadena de conexión dentro de la variable `MONGODB_URI`, la cual será suministrada por el edministrador del proyecto.
 
 ---
 ## Backend
