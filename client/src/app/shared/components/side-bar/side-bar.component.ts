@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
-  linksMenu: Array<any> = [
+  /* linksMenu: Array<any> = [
     {
       name: 'Home',
       icon: 'uil-estate'
@@ -20,11 +20,64 @@ export class SideBarComponent implements OnInit {
       name: 'Ubicaciones',
       icon: 'uil-map-pin-alt'
     }
-  ]
+  ] */
+
+  mainMenu: {
+    defaultOptions: Array<any>, accessLink: Array<any>
+  } = { defaultOptions: [], accessLink: []}
+
+  customOptions: Array<any> = []
 
   constructor() { }
 
   ngOnInit(): void {
+
+    this.mainMenu.defaultOptions = [
+      {
+        name: 'Home',
+        icon: 'uil-estate',
+        router: ['/']
+      },
+      {
+        name: 'Propiedades',
+        icon: 'uil-building',
+        router: ['/', 'properties']
+      },
+      {
+        name: 'Ubicaciones',
+        icon: 'uil-map-pin-alt',
+        router: ['/', 'locations']
+      }
+    ]
+
+    this.mainMenu.accessLink = [
+      {
+        name: 'Home',
+        icon: 'uil-estate',
+        router: ['/']
+      },
+      {
+        name: 'Propiedades',
+        icon: 'uil-building',
+        router: ['/', 'properties']
+      }
+    ]
+
+    this.customOptions = [
+      {
+        name: 'Item 1',
+        router: ['/']
+      },
+      {
+        name: 'Item 2',
+        router: ['/']
+      },
+      {
+        name: 'Item 3',
+        router: ['/']
+      }
+    ]
+
   }
 
 }
