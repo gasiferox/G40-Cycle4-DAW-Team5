@@ -34,17 +34,17 @@ export class SideBarComponent implements OnInit {
 
     this.mainMenu.defaultOptions = [
       {
-        name: 'Home',
+        name: 'Casas',
         icon: 'uil-estate',
         router: ['/']
       },
       {
-        name: 'Propiedades',
+        name: 'Apartamentos',
         icon: 'uil-building',
         router: ['/', 'properties']
       },
       {
-        name: 'Ubicaciones',
+        name: 'Fincas',
         icon: 'uil-map-pin-alt',
         router: ['/', 'locations']
       }
