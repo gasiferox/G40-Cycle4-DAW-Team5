@@ -22,9 +22,18 @@ export class SideBarComponent implements OnInit {
     }
   ] */
 
-  mainMenu: {
+  /* mainMenu: {
     defaultOptions: Array<any>, accessLink: Array<any>
-  } = { defaultOptions: [], accessLink: []}
+  } = { defaultOptions: [], accessLink: []} */
+
+  mainMenu: {
+    userOptions: Array<any>,
+    locationOptions: Array<any>,
+    propertyOptions: Array<any>
+  } = { userOptions: [],
+    locationOptions: [],
+    propertyOptions: []}
+
 
   customOptions: Array<any> = []
 
@@ -32,25 +41,78 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.mainMenu.defaultOptions = [
+    this.mainMenu.userOptions = [
       {
-        name: 'Casas',
-        icon: 'uil-estate',
+        name: 'Agregar Usuario',
+        icon: 'uil-plus',
         router: ['/']
       },
       {
-        name: 'Apartamentos',
-        icon: 'uil-building',
+        name: 'Listar Usuario por Id',
+        icon: 'uil-list-ol',
         router: ['/', 'properties']
       },
       {
-        name: 'Fincas',
-        icon: 'uil-map-pin-alt',
+        name: 'Actualizar usuario',
+        icon: 'uil-edit',
         router: ['/', 'locations']
+      },
+      {
+        name: 'Borrar usuario',
+        icon: 'uil-trash-alt',
+        router: ['/']
       }
     ]
 
-    this.mainMenu.accessLink = [
+    this.mainMenu.locationOptions = [
+      {
+        name: 'Agregar Ubicación',
+        icon: 'uil-plus',
+        router: ['/']
+      },
+      {
+        name: 'Listar Ubicación por Id',
+        icon: 'uil-list-ol',
+        router: ['/', 'properties']
+      },
+      {
+        name: 'Actualizar Ubicación',
+        icon: 'uil-edit',
+        router: ['/', 'locations']
+      },
+      {
+        name: 'Borrar Ubicación',
+        icon: 'uil-trash-alt',
+        router: ['/']
+      }
+    ]
+
+    this.mainMenu.propertyOptions = [
+      {
+        name: 'Agregar Inmueble',
+        icon: 'uil-plus',
+        router: ['/']
+      },
+      {
+        name: 'Listar Inmueble por Id',
+        icon: 'uil-list-ol',
+        router: ['/', 'properties']
+      },
+      {
+        name: 'Actualizar Inmueble',
+        icon: 'uil-edit',
+        router: ['/', 'locations']
+      },
+      {
+        name: 'Borrar Inmueble',
+        icon: 'uil-trash-alt',
+        router: ['/']
+      }
+    ]
+
+
+
+    /* this.mainMenu.accessLink = [
       {
         name: 'Home',
         icon: 'uil-estate',
@@ -61,7 +123,7 @@ export class SideBarComponent implements OnInit {
         icon: 'uil-building',
         router: ['/', 'properties']
       }
-    ]
+    ] */
 
     this.customOptions = [
       {
