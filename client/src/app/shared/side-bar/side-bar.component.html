@@ -1,0 +1,37 @@
+<div class="side-bar">
+  <div><i class="uil uil-ellipsis-h"></i></div>
+  <span><i class="uil uil-user"></i> Usuarios</span>
+  <ul class="side-bar__list list-one">
+    <li [routerLink]="item.router" *ngFor="let item of mainMenu.userOptions">
+        <div class="list-wrapper-item">
+            <i [ngClass]="['uil',item.icon]"></i>
+            <span class="side-bar__list list-label">{{item.name}}</span>
+        </div>
+    </li>
+</ul>
+
+<div class="side-bar__separator"></div>
+<div class="side-bar__separator line-separator"></div>
+
+<span><i class="uil uil-map-pin-alt"></i> Ubicaciones</span>
+<ul class="side-bar__list list-one">
+  <li [routerLink]="item.router" *ngFor="let item of mainMenu.locationOptions">
+      <div class="list-wrapper-item">
+          <i [ngClass]="['uil',item.icon]"></i>
+          <span class="side-bar__list list-label">{{item.name}}</span>
+      </div>
+  </li>
+</ul>
+
+<div class="side-bar__separator"></div>
+<div class="side-bar__separator line-separator"></div>
+
+<span><i class="uil uil-building"></i> Inmuebles</span>
+<ul class="side-bar__list list-one">
+  <li [routerLink]="item.router" *ngFor="let item of mainMenu.propertyOptions">
+      <div class="list-wrapper-item">
+          <i [ngClass]="['uil',item.icon]"></i>
+          <span class="side-bar__list list-label">{{item.name}}</span>
+      </div>
+  </li>
+</ul>
