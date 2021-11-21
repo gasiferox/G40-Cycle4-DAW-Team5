@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { PropertiesPageComponent } from './pages/properties-page/properties-page.component';
 
 const routes: Routes = [
-  {
+  /* {
     path: '',
     component: PropertiesPageComponent,
     outlet: 'child'
-  }
+  } */
 ];
 
 @NgModule({
