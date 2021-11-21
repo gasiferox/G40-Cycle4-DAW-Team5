@@ -109,7 +109,7 @@ export class SideBarComponent implements OnInit {
 
   }
 
-  goTo($event: any): void {
+  /* goTo($event: any): void {
     this.router.navigate(['/', 'admin'], {
       queryParams: {
         key1: 'value1',
@@ -118,6 +118,6 @@ export class SideBarComponent implements OnInit {
       }
     })
     console.log($event)
-  }
+  } */
 
 }

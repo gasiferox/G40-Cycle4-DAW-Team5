@@ -8,3 +8,129 @@
   display: inline-block;
   font-size: 16px;
 }
+
+.get-all-users-body {
+  padding: 1rem 2rem;
+}
+
+.get-all-users-table-header {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  letter-spacing: 1px;
+  border-bottom: solid 1px var(--color-2);
+  padding-bottom: .5rem;
+}
+
+.get-all-users-table-header li {
+  text-transform: uppercase;
+  color: var(--color-4);
+  opacity: .7;
+}
+
+.get-all-users-rows {
+  width: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  margin: 0;
+  padding: 1rem 0 0 0;
+}
+
+.get-all-users-rows .user-data-opacity {
+  opacity: .7;
+  font-weight: 300;
+}
+
+.user-image-section {
+  display: flex;
+  padding: 0
+}
+
+.user-image-section .user-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.user-image-section .user-info {
+  padding: 0 1rem;
+}
+
+.user-image-section .user-info .user-lastName .use-name {
+  font-size: 80%;
+  opacity: .7;
+}
+
+.limitChar {
+  -o-text-overflow: ellipsis;   /* Opera */
+  text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
+  overflow:hidden;              /* don't show excess chars */
+  white-space:nowrap;           /* force single line */
+  width: 50px;                 /* fixed width */
+}
+
+
+/* Header */
+
+.get-all-users-header {
+  display: flex;
+  height: 18rem;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff14;
+}
+
+.content-text {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.user {
+  position: relative;
+  width: 17rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.user .user-icon {
+  height: 100%;
+  width: 18rem;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem;
+  background-color: var(--color-2);
+  box-shadow: var(--shadow-1);
+}
+
+.content-text .title,
+.content-text .sub-title {
+  margin: 0;
+  font-weight: 600;
+}
+
+.content-text .title {
+  font-size: 6rem;
+  letter-spacing: -7px;
+}
+
+.content-text .small-text {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.content-text .count-users {
+  font-weight: 300;
+  opacity: .7;
+  padding-left: .5rem;
+}

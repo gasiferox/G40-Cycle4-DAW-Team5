@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  overflow: auto;
+}
+
+.header-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
