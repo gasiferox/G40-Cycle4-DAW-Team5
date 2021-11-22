@@ -44,28 +44,29 @@ export class GetAllUsersComponent implements OnInit {
         lastName: 'Varón Berrio',
         document: '1030718880',
         phone: '3212854687',
-        email: 'juand@juand@gmail.com',
+        email: 'juand@gmail.com',
         password: '7654321'
       },
       {
+
         id: '000000000004',
         image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg',
-        name: 'N/A',
-        lastName: 'N/A',
-        document: 'N/A',
-        phone: 'N/A',
-        email: 'N/A',
-        password: 'N/A'
+        name: 'Leonardo',
+        lastName: 'Jiménez',
+        document: '1031140189',
+        phone: '3183540367',
+        email: 'ljim230@gmail.com',
+        password: '123456'
       },
       {
         id: '000000000005',
         image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg',
-        name: 'N/A',
-        lastName: 'N/A',
-        document: 'N/A',
-        phone: 'N/A',
-        email: 'N/A',
-        password: 'N/A'
+        name: 'Maria Patricia',
+        lastName: 'Guevara',
+        document: '40782026',
+        phone: '3202312679',
+        email: 'mariapatriciaguevaracastano@gmail.com',
+        password: '7654321'
       }
     ]
 
