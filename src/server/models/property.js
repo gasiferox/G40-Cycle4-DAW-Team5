@@ -1,49 +1,47 @@
 const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const Location = mongoose.model('Location')
+
+//const locationSchema = require('../models/location')
 
 const propertySchema = mongoose.Schema({
-
-    type: {
+    tipo: {
         type: String,
         required: true
     },
-
-    location:{
-        type: String,
+    ubicacion: {
+        type: Schema.ObjectId,
+        ref: 'Location',
         required: true
     },
-    
-    area:{
+    area: {
         type: Number,
         required: true
     },
-
-    price:{
+    precio: {
         type: Number,
         required: true
     },
-
-    rooms:{
+    habitaciones: {
         type: Number,
         required: true
     },
-    bathrooms:{
+    baños: {
         type: Number,
         required: true
     },
-    parking:{
-        type: String,
+    parqueadero: { 
+        type: Boolean, 
         required: true
     },
-
-    description:{
+    descripcion: { 
         type: String,
-        required: true
+        required: false
     },
-
-    images:{
+    imagenes: { 
         type: String,
-        required: true
+        required: false
     }
 })
 
-module.exports = mongoose.model('Property', propertySchema)
+module.exports = mongoose.model('Propertie', propertySchema)

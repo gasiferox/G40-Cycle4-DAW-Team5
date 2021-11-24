@@ -1,0 +1,1 @@
+MONGODB_URI = 'mongodb+srv://team5:team5.1234@clusterteam5.dix94.mongodb.net/inmobiliaria?retryWrites=true&w=majority'
