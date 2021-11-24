@@ -58,11 +58,11 @@ Content-Type: application/json
 
 
 {
-    "departamento": "Risaralda",
-    "ciudad": "Pereira",
-    "zona": "Este",
-    "vereda": "Tribunas",
-    "direccion": "Km 6, via armenia, casa 3"
+    "departamento": "Caqueta",
+    "ciudad": "Florencia",
+    "zona": "Occidente",
+    "vereda": "",
+    "direccion": "Cra 2 B 8A 17"
 }
 
 ### GET ALL LOCATIONS
@@ -86,65 +86,6 @@ Content-Type: application/json
 
 
 ### DELETE LOCATION
-<<<<<<< HEAD:requests.http
-DELETE http://localhost:7500/api/locations/61907fbb9569dfc8b50001e7 HTTP/1.1
-
-
-
-
-### ADD PROPERTYS
-POST http://localhost:7500/api/propertys HTTP/1.1
-Content-Type: application/json
-
-{
-    "type": "Apartamento",
-     "location": "ZF CARRERA 1, Bogotá",
-      "area": "154", 
-      "price": "400.000", 
-      "rooms": "3",
-      "bathrooms": "2", 
-      "parking": "1", 
-      "description": "blanco de puertas negras", 
-      "images": "https://construccionesprisma.com.co/images/listing_photos/22_0001pradoalto01fachada.jpg"
-},
-{
-    "type": "Apartamento",
-     "location": "ZF CARRERA 1, Bogotá",
-      "area": "154", 
-      "price": "300.000", 
-      "rooms": "2",
-      "bathrooms": "1", 
-      "parking": "0", 
-      "description": "gris de puertas negras", 
-      "images": "https://construccionesprisma.com.co/images/listing_photos/22_imponenteacceso2.jpg"
-}
-
-
-### GET ALL PROPERTYSS
-GET http://localhost:7500/api/propertys HTTP/1.1
-
-### GET PROPERTYS BY ID
-GET http://localhost:7500/api/propertys/ HTTP/1.1
-
-### UPDATE A PROPERTYS
-PUT http://localhost:7500/api/propertys/ HTTP/1.1
-Content-Type: application/json
-
-{
-    "type": "Apartamento",
-     "location": "ZF CARRERA 1, Bogotá",
-      "area": "154", 
-      "price": "400.000", 
-      "rooms": "3",
-      "bathrooms": "2", 
-      "parking": "1", 
-      "description": "blanco de puertas negras", 
-      "images": "https://construccionesprisma.com.co/images/listing_photos/22_imponenteacceso2.jpg"
-}
-
-### DELETE PROPERTYS
-DELETE http://localhost:7500/api/propertys/ HTTP/1.1
-=======
 DELETE http://localhost:7500/api/locations/61907f659569dfc8b50001df HTTP/1.1
 
 
@@ -157,14 +98,14 @@ Content-Type: application/json
 
 
 {
-    "tipo": "casa",
+    "tipo": "Apartamento",
     "ubicacion": "61907f659569dfc8b50001df",
-    "area": 380,
-    "precio": 850000000,
-    "habitaciones": 4,
-    "baños": 4,
-    "parqueadero": true,
-    "descripcion": "Casa campestre",
+    "area": 72,
+    "precio": 120000000,
+    "habitaciones": 2,
+    "baños": 1,
+    "parqueadero": false,
+    "descripcion": "Apartemento residencial Tercer piso",
     "imagenes": ""
 }
 
@@ -173,24 +114,23 @@ Content-Type: application/json
 GET http://localhost:7500/api/properties HTTP/1.1
 
 ### GET PROPERTIES BY ID
-GET http://localhost:7500/api/properties/61914ee3f8ce995637227351 HTTP/1.1
+GET http://localhost:7500/api/properties/6191d7cc62c5be0c344c6856 HTTP/1.1
 
 ### UPDATE A PROPERTY
-PUT http://localhost:7500/api/properties/61914ee3f8ce995637227351 HTTP/1.1
+PUT http://localhost:7500/api/properties/6191d7cc62c5be0c344c6856 HTTP/1.1
 Content-Type: application/json
 
 {
     "tipo": "apartamento",
-    "ubicacion": "61907f9f9569dfc8b50001e3",
-    "area": 94,
-    "precio": 685000000,
+    "ubicacion": "6191d72b62c5be0c344c6854",
+    "area": 72,
+    "precio": 120000000,
     "habitaciones": 2,
-    "baños": 2,
+    "baños": 1,
     "parqueadero": false,
-    "descripcion": "Apartamento amoblado",
+    "descripcion": "Apartamento residencial tercer piso",
     "imagenes": ""
 }
 
 ### DELETE PROPERTY
 DELETE http://localhost:7500/api/properties/61901c39084ce5ff87b7e063 HTTP/1.1
->>>>>>> 37fb6ba77dbcac0e764714e0bdb2a20ab60ee33b:server/requests.http

@@ -1,0 +1,24 @@
+.main-wrapper {
+  margin: 0 0 0 17.5rem;
+  background: rgb(23, 23, 26);
+  background: linear-gradient(90deg, rgba(23, 23, 26, 1) 44%, rgba(24, 24, 24, 1) 100%);
+  min-height: 100vh;
+  height: 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/client/src/assets/img/pexels-david-mcbee-1546168.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

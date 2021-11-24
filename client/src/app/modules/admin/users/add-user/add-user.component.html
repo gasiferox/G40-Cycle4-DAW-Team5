@@ -1,0 +1,86 @@
+<div class="main-card mb-4">
+<div class="card-body" >
+  
+  <form id="signupForm" class="col-md-10 mx-auto" action="/">
+    <div class="form-group"><h5 class="card-title" >Agregar Usuario</h5></div>
+    <br>
+      <div class="form-group">
+          <label for="nombres">Nombres</label>
+          <div>
+            <input
+            type="text"
+            placeholder="Nombres"
+            id="departamento"
+            ng-model="formData.nombres"
+            size="50"
+          /> </div>
+      </div>
+      <div class="form-group">
+          <label for="apellidos">Apellidos</label>
+          <div>
+            <input
+            type="text"
+            placeholder="Apellidos"
+            ng-model="formData.apellidos"
+            size="50"
+          /> </div>
+      </div>
+      <div class="form-group">
+          <label for="telefono">Telefono</label>
+          <div>
+            <input
+            type="text"
+            placeholder="Número telefónico"
+            ng-model="formData.telefono"
+            size="50"
+          /></div>
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <div>
+            <input
+          type="text"
+          placeholder="Correo electrónico"
+          ng-model="formData.email"
+          size="50"
+      /></div>
+      </div>
+
+      <div class="form-group">
+          <label for="clave">Clave</label>
+        <div>
+          <input
+          type="text"
+          placeholder="Clave"
+          ng-model="formData.clave"
+          size="50"
+      /></div>
+    </div>
+      <div class="form-group">
+          <label for="clave">Confirme clave</label>
+          <div>
+            <input
+            type="text"
+            placeholder="Clave"
+            ng-model="formData.clave"
+            size="50"
+          /></div>
+      </div>
+      <br>
+      <div class="form-group">
+          <div>
+              <div class="form-check">
+                  <input type="checkbox" id="agree" name="agree" value="agree" class="form-check-input">
+                  
+                  <label class="form-check-label">Please agree to our policy</label>
+              </div>
+          </div>
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-success" name="signup" value="Sign up">Registrar usuario</button>
+      </div>
+  </form>
+</div>
+</div>
+
+
