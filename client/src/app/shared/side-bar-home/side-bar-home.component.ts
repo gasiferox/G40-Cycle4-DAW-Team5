@@ -25,99 +25,21 @@ export class SideBarHomeComponent implements OnInit {
 
     this.mainMenu.userOptions = [
       {
-        name: 'Agregar Usuario',
+        name: 'Home',
         icon: 'uil-plus',
-        router: ['/', 'admin', 'add-user']
-      },
-      /* {
-        name: 'Listar Usuario por Id',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-user-by-id']
-      }, */
-      {
-        name: 'Listar Usuarios',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-all-users']
+        router: ['/', 'user', 'dashboard']
       },
       {
-        name: 'Actualizar usuario',
+        name: 'Acerca de',
+        icon: 'uil-list-ol',
+        router: ['/', 'user', 'acerca']
+      },
+      {
+        name: 'Contacto',
         icon: 'uil-edit',
-        router: ['/', 'admin', 'edit-user']
+        router: ['/', 'user', 'contacto']
       },
-      {
-        name: 'Borrar usuario',
-        icon: 'uil-trash-alt',
-        router: ['/', 'admin', 'delete-user']
-      }
+      
     ]
-
-    this.mainMenu.locationOptions = [
-      {
-        name: 'Agregar Ubicación',
-        icon: 'uil-plus',
-        router: ['/', 'admin', 'add-location']
-      },
-      /* {
-        name: 'Listar Ubicación por Id',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-location-by-id']
-      }, */
-      {
-        name: 'Listar ubicaciones',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-all-locations']
-      },
-      {
-        name: 'Actualizar Ubicación',
-        icon: 'uil-edit',
-        router: ['/', 'admin', 'edit-location']
-      },
-      {
-        name: 'Borrar Ubicación',
-        icon: 'uil-trash-alt',
-        router: ['/', 'admin', 'delete-location']
-      }
-    ]
-
-    this.mainMenu.propertyOptions = [
-      {
-        name: 'Agregar Inmueble',
-        icon: 'uil-plus',
-        router: ['/', 'admin', 'add-property']
-      },
-      /* {
-        name: 'Listar Inmueble por Id',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-property-by-id']
-      }, */
-      {
-        name: 'Listar Inmuebles',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-all-properties']
-      },
-      {
-        name: 'Actualizar Inmueble',
-        icon: 'uil-edit',
-        router: ['/', 'admin', 'edit-property']
-      },
-      {
-        name: 'Borrar Inmueble',
-        icon: 'uil-trash-alt',
-        router: ['/', 'admin', 'delete-property']
-      }
-    ]
-
   }
-
-  /* goTo($event: any): void {
-    this.router.navigate(['/', 'admin'], {
-      queryParams: {
-        key1: 'value1',
-        key2: 'value2',
-        key3: 'value3'
-      }
-    })
-    console.log($event)
-  } */
-
 }
