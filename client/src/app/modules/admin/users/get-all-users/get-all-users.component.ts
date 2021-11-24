@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '@modules/admin/services/user.service';
 
 @Component({
   selector: 'app-get-all-users',
@@ -11,9 +12,11 @@ export class GetAllUsersComponent implements OnInit {
     mockUsers: Array<any>, mockLocations: Array<any>, mockProperties: Array<any>
   } = { mockUsers: [], mockLocations: [], mockProperties: [] }
 
-  constructor() { }
+  constructor(private _userService: UserService) { }
 
   ngOnInit(): void {
+
+    this._userService.getAllUsers$().subscribe(response => {console.log('---> **DB**', response)})
 
     this.mockDb.mockUsers = [
       {
