@@ -16,7 +16,7 @@ export class GetAllUsersComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this._userService.getAllUsers$().subscribe(response => {console.log('---> **DB**', response)})
+    this._userService.getAllUsers$().subscribe(response => {console.log(response)})
 
     this.mockDb.mockUsers = [
       {

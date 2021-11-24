@@ -26,6 +26,11 @@ app.use(express.static('src'))
 app.use('/api', userRoutes)
 app.use('/api', locationRoutes)
 app.use('/api', propertyRoutes)
+/* Allowing connect from proxy */
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+})
 
 // html invoke
 /* const fs = require('fs')

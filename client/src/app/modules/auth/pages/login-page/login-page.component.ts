@@ -36,6 +36,11 @@ export class LoginPageComponent implements OnInit {
     const { email, password } = this.formLogin.value
     /* console.log('Datos capturados satisfactoriamente', body) */
     this._authService.sendCredentials(email, password)
+    .subscribe(ResponseOk => {
+      console.log("Sesión iniciada correctamente")
+    }, err => {
+      console.log("Error en los datos de entrada, login y/o password")
+    })
   }
 
 }
