@@ -1,21 +1,26 @@
 <h1>Adicionar ubicacion</h1>
-<div>
-  <ul>
-    <form action="/">
-      <label for="Nombre">Departamento</label><br>
-      <input type="text" placeholder="Departamento" id="departamento" ng-model="formData.departamento" size="50"><br>
+    <div>
+        <ul>
+            <form action="/">
+                <label for="departamento">Departamento</label><br>
+                <input type="text" placeholder="Departamento" id="departamento" ng-model="formData.departamento" size="50"><br>
 
-      <label for="tipo">Ciudad</label><br>
-      <input type="text" placeholder="Ciudad" ng-model="formData.ciudad" size="50"><br>
+                <label for="ciudad">Ciudad</label><br>
+                <input type="text"  placeholder="Ciudad" ng-model="formData.ciudad" size="50"><br>
 
-      <label for="imagen">Zona</label><br>
-      <input type="text" placeholder="Sur Norte Oriente u Occidente" ng-model="formData.zona" size="50"><br>
+                <label for="zona">Zona</label><br>
+                <select  id="zona" ng-model="formData.zona">
+                    <option selected disabled>Zona</option>
+                    <option value="norte">Norte</option>
+                    <option value="sur">Sur</option>
+                    <option value="oriente">Oriente</option>
+                    <option value="occidente">Occidente</option>
+                </select><br>
 
-      <label for="ubicacion">Vereda</label><br>
-      <input type="text" placeholder="Vereda" ng-model="formData.vereda" size="50"><br><br>
+                <label for="vereda">Vereda</label><br>
+                <input type="text" placeholder="Vereda" ng-model="formData.vereda" size="50"><br><br>
 
-      <button class="btn btn-primary btn-lg button">Registrar ubicacion</button>
-    </form>
-  </ul>
-</div>
-
+                <button class="btn btn-primary btn-lg button">Registrar ubicacion</button>
+            </form>
+        </ul>
+    </div>
