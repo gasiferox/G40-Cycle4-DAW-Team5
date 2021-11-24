@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SideBarHomeComponent } from './side-bar-home/side-bar-home.component';
 
 
 
@@ -15,7 +16,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeaderComponent,
     FooterComponent,
     ErrorComponent,
-    DashboardComponent
+    DashboardComponent,
+    SideBarHomeComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SideBarComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    SideBarHomeComponent
   ]
 })
 export class SharedModule { }
