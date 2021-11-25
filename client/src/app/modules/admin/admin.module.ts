@@ -18,7 +18,10 @@ import { GetAllPropertiesComponent } from './properties/get-all-properties/get-a
 import { GetPropertyByIdComponent } from './properties/get-property-by-id/get-property-by-id.component';
 import { EditPropertyComponent } from './properties/edit-property/edit-property.component';
 import { DeletePropertyComponent } from './properties/delete-property/delete-property.component';
-
+import { ContactoComponent } from '@modules/user/contacto/contacto.component';
+import { AcercaComponent } from '@modules/user/acerca/acerca.component';
+import { DashboardComponent } from '@modules/user/dashboard/dashboard.component';
+// import { LoginPageComponent } from '@modules/auth/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,11 @@ import { DeletePropertyComponent } from './properties/delete-property/delete-pro
     GetAllPropertiesComponent,
     GetPropertyByIdComponent,
     EditPropertyComponent,
-    DeletePropertyComponent
+    DeletePropertyComponent,
+    ContactoComponent,
+    AcercaComponent,
+    DashboardComponent
+    //,LoginPageComponent
   ],
   imports: [
     CommonModule,

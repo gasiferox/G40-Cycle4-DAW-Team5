@@ -5,25 +5,32 @@ const colors = require('colors')
 const mongoose = require('mongoose')
 require('dotenv').config()
 // Routes
+const userRoutes = require('./routes/user')
 const locationRoutes = require('./routes/location')
 const propertyRoutes = require('./routes/property')
 
 
 // DB Connection
-const connnectionString = 'mongodb+srv://team5:team5.1234@clusterteam5.dix94.mongodb.net/inmobiliaria?retryWrites=true&w=majority'
+const connnectionString = process.env.MONGODB_URI
 mongoose.connect(connnectionString, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
-    console.log(colors.bgGreen("mongodb connected"))
+    console.log(colors.yellow("mongodb connected"))
 }).catch((err) => {
-    console.log(color.bgred("mongodb not connected"))
+    console.log(colors.red("mongodb not connected"))
     console.log(err)
 })
 
-// CRUD
+
 // Middlewares
 app.use(express.json())
 app.use(express.static('src'))
+app.use('/api', userRoutes)
 app.use('/api', locationRoutes)
 app.use('/api', propertyRoutes)
+/* Allowing connect from proxy */
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+})
 
 // html invoke
 /* const fs = require('fs')

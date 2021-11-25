@@ -12,6 +12,10 @@ import { AddUserComponent } from './users/add-user/add-user.component';
 import { DeleteUserComponent } from './users/delete-user/delete-user.component';
 import { EditUserComponent } from './users/edit-user/edit-user.component';
 import { GetAllUsersComponent } from './users/get-all-users/get-all-users.component';
+import { ContactoComponent } from '@modules/user/contacto/contacto.component';
+import { AcercaComponent } from '@modules/user/acerca/acerca.component';
+import { DashboardComponent } from '@modules/user/dashboard/dashboard.component';
+// import { LoginPageComponent } from '@modules/auth/login-page/login-page.component';
 
 const routes: Routes = [
   {
@@ -61,7 +65,24 @@ const routes: Routes = [
   {
     path: 'delete-property',
     component: DeletePropertyComponent
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent
+  },
+  {
+    path: 'acerca',
+    component: AcercaComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
   }
+  // ,{
+  //   path: 'login-page',
+  //   component: LoginPageComponent
+  // }
+
 ];
 
 @NgModule({

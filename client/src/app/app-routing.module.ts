@@ -1,24 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { UsuarioComponent } from '@modules/user/usuario/usuario.component';
-
-
-
-
+import { HomePageComponent } from '@modules/home/home-page/home-page.component';
 
 const routes: Routes = [
   {
     path: '',
     /* redirectTo: 'admin', */
-    component: UsuarioComponent,
-    loadChildren: () => import('./modules/user/user.module').then(m => m.UserModule)
-    
+    component: HomePageComponent,
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
-
 })
 export class AppRoutingModule { }
