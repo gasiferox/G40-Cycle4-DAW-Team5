@@ -21,7 +21,10 @@ import { DeletePropertyComponent } from './properties/delete-property/delete-pro
 import { ContactoComponent } from '@modules/user/contacto/contacto.component';
 import { AcercaComponent } from '@modules/user/acerca/acerca.component';
 import { DashboardComponent } from '@modules/user/dashboard/dashboard.component';
-// import { LoginPageComponent } from '@modules/auth/login-page/login-page.component';
+import { RegisterComponent } from '@modules/auth/register/register.component';
+import { LoginPageComponent } from '@modules/auth/login-page/login-page.component';
+
+
 
 @NgModule({
   declarations: [
@@ -42,8 +45,10 @@ import { DashboardComponent } from '@modules/user/dashboard/dashboard.component'
     DeletePropertyComponent,
     ContactoComponent,
     AcercaComponent,
-    DashboardComponent
-    //,LoginPageComponent
+    DashboardComponent,
+    LoginPageComponent,
+    RegisterComponent
+
   ],
   imports: [
     CommonModule,

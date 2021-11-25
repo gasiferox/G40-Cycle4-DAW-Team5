@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '@modules/auth/services/auth.service';
 
 @Component({
-  selector: 'app-login-page',
+  selector: 'app-loginpage',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css']
 })

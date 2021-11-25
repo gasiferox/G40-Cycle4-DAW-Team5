@@ -11,12 +11,14 @@ export class HeaderComponent implements OnInit {
   Menu: {
     contacto: Array<any>,
     acerca: Array<any>,
-    dashboard: Array<any>
-    loginpage: Array<any>
+    dashboard: Array<any>,
+    loginpage: Array<any>,
+    register: Array<any>
   } = { contacto: [],
     acerca: [],
     dashboard: [],
-    loginpage: []}
+    loginpage: [],
+    register: []}
 
 
   customOptions: Array<any> = []
@@ -52,6 +54,13 @@ export class HeaderComponent implements OnInit {
         icon: 'uil-plus',
         router: ['/', 'admin', 'loginpage']
       }
+    ]
+      this.Menu.register = [
+        {
+          name: 'register',
+          icon: 'uil-plus',
+          router: ['/', 'admin', 'register']
+        }
     ]
 
   }

@@ -12,7 +12,7 @@
         <li><a [routerLink]="item.router" *ngFor="let item of Menu.dashboard" class="nav-link px-2 text-white">Home</a></li>
         <li><a [routerLink]="item.router" *ngFor="let item of Menu.contacto" class="nav-link px-2 text-white">Contacto</a></li>
         <li><a [routerLink]="item.router" *ngFor="let item of Menu.acerca" class="nav-link px-2 text-white">Acerca</a></li>
-        <li><a [routerLink]="item.router" *ngFor="let item of Menu.contacto" class="nav-link px-2 text-white">Agentes</a></li>
+        <li><a [routerLink]="item.router" *ngFor="let item of Menu.loginpage" class="nav-link px-2 text-white">Regists</a></li>
 
       </ul>
 
@@ -21,8 +21,8 @@
       </form>
 
       <div class="text-end">
-        <button type="button" class="btn btn-outline-light me-2" [routerLink]="item.router" *ngFor="let item of Menu.contacto">Login</button>
-        <button type="button" class="btn btn-warning" >Sign-up</button>
+        <button type="button" class="btn btn-outline-light me-2" [routerLink]="item.router" *ngFor="let item of Menu.loginpage">Login</button>
+        <button type="button" class="btn btn-warning" [routerLink]="item.router" *ngFor="let item of Menu.register">Sign-up</button>
       </div>
     
     </div>

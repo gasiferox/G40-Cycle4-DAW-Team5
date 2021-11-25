@@ -1,34 +1,28 @@
-<div class="login-auth-page">
-  <div class="login-auth-wrapper">
-      <h3>Para continuar, inicia sesión, por favor!</h3>
-      <div class="login-social-zone">
-          <button class="social-btn btn-fb "> <i class="uil uil-facebook-f"></i> Continuar con Meta</button>
-          <button class="social-btn btn-apple"><i class="uil uil-apple"></i> Continuar con Apple</button>
-          <button class="social-btn"><i class="uil uil-google"></i> Continuar con Google</button>
-      </div>
-      <div class="separator"></div>
-      <form (ngSubmit)="sendLogin()" [formGroup]="formLogin" class="login-auth-form">
-          <div class="form-group">
-              <label for="email">Dirección de correo o nombre de usuario</label>
-              <input formControlName="email" type="text" placeholder="Dirección de correo o nombre de usuario" class="form-input">
-          </div>
-          <div class="form-group">
-              <label for="password">Contraseña</label>
-              <input formControlName="password" type="password" placeholder="Contraseña" class="form-input">
-          </div>
-          <div class="form-steps">
-              <a class="link" href="">¿Se te ha olvidado la contraseña?</a>
-          </div>
-          <div>
-              Ocurrio un error con tu email o password
-          </div>
-          <div class="form-action">
-              <button [disabled]="formLogin.invalid" class="login social-btn">Iniciar sesión</button>
-          </div>
-      </form>
-      <div>
-        <hr> Raw Invalid: {{formLogin.invalid| json}}
-        <!-- <hr> Raw Valid: {{formLogin.valid|json}} -->
-      </div>
-  </div>
+<div class="col-md-4 col-md-offset-4">
+    <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Login via site</h3>
+         </div>
+          <div class="panel-body">
+            <form accept-charset="UTF-8" role="form">
+            <fieldset>
+                  <div class="form-group">
+                    <input class="form-control" placeholder="yourmail@example.com" name="email" type="text">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                    </label>
+                </div>
+                <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
+            </fieldset>
+              </form>
+              <hr>
+            
+            <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
+        </div>
+    </div>
 </div>
