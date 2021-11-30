@@ -12,12 +12,14 @@ export class HeaderComponent implements OnInit {
     contacto: Array<any>,
     acerca: Array<any>,
     dashboard: Array<any>,
-    loginpage: Array<any>,
+    crud: Array<any>,
+    login: Array<any>,
     register: Array<any>
   } = { contacto: [],
     acerca: [],
     dashboard: [],
-    loginpage: [],
+    crud: [],
+    login: [],
     register: []}
 
 
@@ -46,13 +48,20 @@ export class HeaderComponent implements OnInit {
         name: 'Dashboard',
         icon: 'uil-plus',
         router: ['/', 'admin', 'dashboard']
-      }
+      },
     ]
-    this.Menu.loginpage = [
+    this.Menu.crud = [
       {
-        name: 'loginpage',
+        name: 'Crud',
         icon: 'uil-plus',
-        router: ['/', 'admin', 'loginpage']
+        router: ['/', 'admin', 'crud']
+      },
+    ]
+    this.Menu.login = [
+      {
+        name: 'login',
+        icon: 'uil-plus',
+        router: ['/', 'admin', 'login']
       }
     ]
       this.Menu.register = [

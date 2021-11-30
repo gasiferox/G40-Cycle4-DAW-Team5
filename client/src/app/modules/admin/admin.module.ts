@@ -22,8 +22,8 @@ import { ContactoComponent } from '@modules/user/contacto/contacto.component';
 import { AcercaComponent } from '@modules/user/acerca/acerca.component';
 import { DashboardComponent } from '@modules/user/dashboard/dashboard.component';
 import { RegisterComponent } from '@modules/auth/register/register.component';
-import { LoginPageComponent } from '@modules/auth/login-page/login-page.component';
-
+import { LoginComponent } from '@modules/auth/login/login.component';
+import { CrudComponent } from './crud/crud.component';
 
 
 @NgModule({
@@ -46,7 +46,8 @@ import { LoginPageComponent } from '@modules/auth/login-page/login-page.componen
     ContactoComponent,
     AcercaComponent,
     DashboardComponent,
-    LoginPageComponent,
+    CrudComponent,
+    LoginComponent,
     RegisterComponent
 
   ],

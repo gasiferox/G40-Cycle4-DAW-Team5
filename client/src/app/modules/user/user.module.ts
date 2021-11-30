@@ -6,6 +6,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { CrudComponent } from '@modules/admin/crud/crud.component';
 import { SharedModule } from '@shared/shared.module';
 
 
@@ -15,6 +16,7 @@ import { SharedModule } from '@shared/shared.module';
     DashboardComponent,
     AcercaComponent,
     ContactoComponent,
+    CrudComponent,
   
 
   ],

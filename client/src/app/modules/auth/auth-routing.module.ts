@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginPageComponent } from './login-page/login-page.component';
+import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
-    path: 'loginpage',  /* http://localhost:4200/auth/login-page */
-    component: LoginPageComponent
+    path: 'login', //  http://localhost:4200/auth/login
+    component: LoginComponent
   },
   {
     path: '**',
-    redirectTo: 'auth/login-page'
+    redirectTo: 'auth/login'
   },
   {
-    path: 'register',  /* http://localhost:4200/auth/login */
+    path: 'register', // http://localhost:4200/auth/register
     component: RegisterComponent
   },
   {

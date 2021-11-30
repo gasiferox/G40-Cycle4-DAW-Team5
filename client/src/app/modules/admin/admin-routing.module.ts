@@ -15,8 +15,9 @@ import { GetAllUsersComponent } from './users/get-all-users/get-all-users.compon
 import { ContactoComponent } from '@modules/user/contacto/contacto.component';
 import { AcercaComponent } from '@modules/user/acerca/acerca.component';
 import { DashboardComponent } from '@modules/user/dashboard/dashboard.component';
+import { CrudComponent } from './crud/crud.component';
 import { RegisterComponent } from '@modules/auth/register/register.component';
-import { LoginPageComponent } from '@modules/auth/login-page/login-page.component';
+import { LoginComponent } from '@modules/auth/login/login.component';
 
 const routes: Routes = [
   {
@@ -80,12 +81,16 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
+  path: 'crud',
+  component: CrudComponent
+  },
+  {
     path: 'register',
     component: RegisterComponent
   }
   ,{
-    path: 'loginpage',
-    component: LoginPageComponent
+    path: 'login',
+    component: LoginComponent
   }
 
 ];

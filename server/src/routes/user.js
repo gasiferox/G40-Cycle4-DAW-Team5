@@ -22,8 +22,8 @@ router.get('/users/:id', (req, res) => {
 // Update a user
 router.put('/users/:id', (req, res) => {
     const {id} = req.params
-    const {nombres, apellidos, docuemento, telefono, email, clave} = req.body
-    userSchema.updateOne({_id: id}, {$set: {nombres, apellidos, docuemento, telefono, email, clave}}).then((data) => res.json(data)).catch((err) => res.json({message: err}))
+    const {nombres, apellidos, documento, telefono, email, clave} = req.body
+    userSchema.updateOne({_id: id}, {$set: {nombres, apellidos, documento, telefono, email, clave}}).then((data) => res.json(data)).catch((err) => res.json({message: err}))
 })
 
 // Delete a user
