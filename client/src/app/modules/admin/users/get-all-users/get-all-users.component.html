@@ -20,6 +20,7 @@
     <li>Teléfono</li>
     <li>e-mail</li>
     <li>Clave</li>
+    <li>Rol</li>
   </ul>
 
   <ul class="get-all-users-rows" *ngFor="let user of mockDb.mockUsers">
@@ -43,6 +44,9 @@
     </li>
     <li class="user-data-opacity limitChar">
       {{user.password}}
+    </li>
+    <li class="user-data-opacity limitChar">
+      {{user.rol}}
     </li>
   </ul>
 </div>

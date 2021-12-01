@@ -15,7 +15,7 @@ export class UserService {
   }
 
   getAllUsers$(): Observable<any> {
-    return this._httpClient.get(`${this.URL}/tracks`)
+    return this._httpClient.get(`${this.URL}/get-all-users`)
   }
 
 }

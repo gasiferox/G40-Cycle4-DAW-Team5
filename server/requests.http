@@ -1,51 +1,20 @@
 ### USERS ###
 
+GET http://localhost:7500/api/users/ HTTP/1.1
+Content-Type: application/json
+
 ### ADD USER
 POST http://localhost:7500/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombres": "Gustavo",
-    "apellidos": "Romero",
+    "nombres": "Gustavo2",
+    "apellidos": "Romero2",
     "documento": "78965452631",
     "telefono": "321456789",
     "email": "gasifero@gmail.com",
-    "clave": "123456"
-},
-{
-    "nombres": "Maria Patricia",
-    "apellidos": "Guevara",
-    "documento": "45698745",
-    "telefono": "3214569874",
-    "email": "mariapatricia@gmail.com",
-    "clave": "452147"
-},
-{
-    "nombres": "Leonardo",
-    "apellidos": "Rivera",
-    "documento": "6543982",
-    "telefono": "786453",
-    "email": "leoil@gmail.com",
-    "clave": "736352"
-}
-
-### GET ALL USERS
-GET http://localhost:7500/api/users HTTP/1.1
-
-### GET USER BY ID
-GET http://localhost:7500/api/users/619008a559bfce4528bcdb72 HTTP/1.1
-
-### UPDATE A USER
-PUT http://localhost:7500/api/users/619008a559bfce4528bcdb72 HTTP/1.1
-Content-Type: application/json
-
-{
-    "nombres": "Gustavo",
-    "apellidos": "Romero Nocua",
-    "documento": "78965452631",
-    "telefono": "321456789",
-    "email": "gasifero@gmail.com",
-    "clave": "123456"
+    "clave": "123456",
+    "rol": "Administrador"
 }
 
 ### DELETE USER

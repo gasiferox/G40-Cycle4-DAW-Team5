@@ -7,9 +7,108 @@
   </div>
 </nav> -->
 
-<div class="navbar">
+
+
+<!-- <div class="navbar">
   <a class="active" href="#"><i class="uil uil-home"></i> Home</a>
   <a href="#"><i class="uil uil-search"></i> Search</a>
   <a href="#"><i class="uil uil-envelope"></i> Contact</a>
   <a href="#"><i class="uil uil-user"></i> Login</a>
+</div> -->
+
+
+<div class="wrapper hover-collapse">
+  <!-- top navigation bar -->
+  <div class="top-navbar">
+    <!-- logo -->
+    <div class="logo">The Assemblers</div>
+
+    <!-- menu button -->
+    <div class="menu">
+      <div class="hamburger">
+        <i class="uil uil-bars"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-inner">
+      <ul class="no-bullets">
+        <li><a href=""><span class="icon"><i class="uil uil-qrcode-scan"></i></span><span
+              class="text">Dashboard</span></a></li>
+        <li><a href=""><span class="icon"><i class="uil uil-link"></i></span><span class="text">Shortcut</span></a></li>
+        <li><a href=""><span class="icon"><i class="uil uil-eye"></i></span><span class="text">Overview</span></a></li>
+        <li><a href=""><span class="icon"><i class="uil uil-book"></i></span><span class="text">Event</span></a></li>
+        <li><a href=""><span class="icon"><i class="uil uil-question-circle"></i></span><span
+              class="text">About</span></a></li>
+        <li><a href=""><span class="icon"><i class="uil uil-pen"></i></span><span class="text">Service</span></a></li>
+        <li><a href=""><span class="icon"><i class="uil uil-card-atm"></i></span><span class="text">contact</span></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
 </div>
+
+<!-- now active button using TS -->
+<script type="text/javascript">
+
+  /* Define the constants of the class functions */
+  var li_items = document.querySelectorAll(".sidebar ul li")
+  var hamburger = document.querySelector(".hamburger")
+  var wrapper = document.querySelector(".wrapper")
+
+  /* What will change if the mouse hover the sidebar */
+  li_items.forEach((li_item) => {
+    li_item.addEventListener("mouseenter", () => {
+      /* Have already style information about hover-collapse */
+      li_item.closest(".wrapper").classList.remove("hover-collapse")
+    })
+  })
+
+  li_items.forEach((li_item) => {
+    li_item.addEventListener("mouseleave", () => {
+      /* Have already style information about hover-collapse */
+      li_item.closest(".wrapper").classList.add("hover-collapse")
+    })
+  })
+
+  /* To execute the burger button */
+  hamburger.addEventListener("click", () => {
+    hamburger.closest('.wrapper').classList.toggle('hover-collapse')
+  })
+
+</script>
+
+
+<!-- now active button using TS -->
+<script type="text/typescript">
+
+  /* Define the constants of the class functions */
+  var li_items = document.querySelectorAll(".sidebar ul li")
+  var hamburger = document.querySelector(".hamburger")
+  var wrapper = document.querySelector(".wrapper")
+
+  /* What will change if the mouse hover the sidebar */
+  li_items.forEach((li_item) => {
+    li_item.addEventListener("mouseenter", () => {
+      /* Have already style information about hover-collapse */
+      li_item.closest(".wrapper").classList.remove("hover-collapse")
+    })
+  })
+
+  li_items.forEach((li_item) => {
+    li_item.addEventListener("mouseleave", () => {
+      /* Have already style information about hover-collapse */
+      li_item.closest(".wrapper").classList.add("hover-collapse")
+    })
+  })
+
+  /* To execute the burger button */
+  hamburger.addEventListener("click", () => {
+    hamburger.closest('.wrapper').classList.toggle('hover-collapse')
+  })
+
+</script>

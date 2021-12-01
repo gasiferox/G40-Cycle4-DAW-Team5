@@ -16,7 +16,7 @@ export class GetAllUsersComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this._userService.getAllUsers$().subscribe(response => {console.log(response)})
+    this._userService.getAllUsers$().subscribe(response => {console.log('Respuesta del server', response)})
 
     this.mockDb.mockUsers = [
       {
@@ -27,7 +27,8 @@ export class GetAllUsersComponent implements OnInit {
         document: '79875452',
         phone: '321456789',
         email: 'gasifero@gmail.com',
-        password: '123456'
+        password: '123456',
+        rol: 'usuario'
       },
       {
         id: '000000000002',
@@ -37,7 +38,8 @@ export class GetAllUsersComponent implements OnInit {
         document: '86084246',
         phone: '3132435238',
         email: 'freddy.herrera.1984@gmail.com',
-        password: '123456'
+        password: '123456',
+        rol: 'Administrador'
       },
       {
 
@@ -48,7 +50,8 @@ export class GetAllUsersComponent implements OnInit {
         document: '1030718880',
         phone: '3212854687',
         email: 'juand@gmail.com',
-        password: '7654321'
+        password: '7654321',
+        rol: 'Usuario'
       },
       {
 
@@ -59,7 +62,8 @@ export class GetAllUsersComponent implements OnInit {
         document: '1031140189',
         phone: '3183540367',
         email: 'ljim230@gmail.com',
-        password: '123456'
+        password: '123456',
+        rol: 'Administrador'
       },
       {
         id: '000000000005',
@@ -69,7 +73,8 @@ export class GetAllUsersComponent implements OnInit {
         document: '40782026',
         phone: '3202312679',
         email: 'mariapatriciaguevaracastano@gmail.com',
-        password: '7654321'
+        password: '7654321',
+        rol: 'Administrador'
       }
     ]
 
