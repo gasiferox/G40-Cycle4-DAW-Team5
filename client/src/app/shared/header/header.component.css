@@ -11,7 +11,7 @@
 .header-img {
   margin-left: 50%;
   transform: translateX(-50%);
-} */
+} 
 
 
 /* Style the navigation bar */
@@ -31,6 +31,8 @@
   font-size: 17px;
   align-items: center;
 }
+
+
 
 /* Navbar links on mouse-over */
 .navbar a:hover {

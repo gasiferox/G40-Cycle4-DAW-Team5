@@ -83,7 +83,7 @@ section {
   font: normal 16px sans-serif;
   padding: 20px;
 
-  position: unset;
+  position: fixed;
   bottom: 0;
   width: 80%;
   height: 6rem;
@@ -166,3 +166,4 @@ section {
     line-height: 1.8;
   }
 }
+
