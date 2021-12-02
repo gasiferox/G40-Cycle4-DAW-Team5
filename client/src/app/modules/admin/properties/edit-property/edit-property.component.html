@@ -1,1 +1,46 @@
-<p>edit-property works!</p>
+<h1>Editar Propiedad</h1>
+<div>
+    <ul>
+        <form action="/">
+            <label for="tipo">Tipo</label><br>
+            <select id="tipo" ng-model="formData.tipo" placeholder="tipo">
+                <option selected disabled>Tipo de propiedad</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="Casa">Casa</option>
+                <option value="local">Local</option>
+            </select><br>
+
+            <label for="ubicacion">Ubicacion</label><br>
+            <input type="text" placeholder="ubicacion" ng-model="formData.ubicacion" size="50"><br>
+
+            <label for="area">Area</label><br>
+            <input type="text" placeholder="area" ng-model="formData.area" size="50"><br>
+
+            <label for="precio">Precio</label><br>
+            <input type="text" placeholder="precio" ng-model="formData.precio" size="50"><br>
+
+            <label for="habitaciones">Habitaciones</label><br>
+            <input type="text" placeholder="habitaciones" ng-model="formData.habitaciones" size="50"><br>
+
+            <label for="baños">Baños</label><br>
+            <input type="text" placeholder="baños" ng-model="formData.baños" size="50"><br>
+
+            <label for="parqueadero">Parqueadero</label><br>
+            <select id="parqueadero" value="parqueadero" ng-model="formData.parqueadero">
+                <option selected disabled>¿Tiene parqueadero?</option>
+                <option value="true">SI</option>
+                <option value="false">NO</option>
+            </select><br>
+
+            <label for="descripcion">Descripcion</label><br>
+            <input type="text" placeholder="descripcion" ng-model="formData.descripcion" size="50"><br>
+
+            <label for="imagenes">Imagenes</label><br>
+            <input type="text" placeholder="imagenes" ng-model="formData.imagenes" size="50"><br><br><br>
+            <div>
+                <button class="btn btn-primary btn-lg button">Editar</button>
+                <button class="btn btn-primary btn-lg buttonEdit"  routerLink= '/admin/get-all-properties'>Regresar</button>
+            </div>
+        </form>
+    </ul>
+</div>
