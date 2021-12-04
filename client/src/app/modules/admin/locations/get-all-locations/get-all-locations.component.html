@@ -1,1 +1,53 @@
-<p>get-all-locations works!</p>
+<div class="header">
+    <div class="property">
+        <div class="property-icon">
+            <i class="uil uil-property"></i>
+        </div>
+    </div>
+    <div class="content-text">
+        <div class="small-text">Administrador</div>
+        <h1 class="title">Ubicaciones</h1>
+        <h5 class="sub-title">Lista de Ubicaciones <span class="count-properties">Registrados al 2021</span> </h5>
+        
+    </div>
+</div>
+<fieldset>
+    <button class="button btn-primary btn-lg Addbutton right" routerLink='/admin/add-location'><i></i>Adicionar Ubicación</button>
+    <input type="text action" placeholder="Buscar.." class="right">
+</fieldset>
+
+
+<div class="body">
+    <ul class="table-header">
+        <li>id</li>
+        <li>Departamento</li>
+        <li>Ciudad</li>
+        <li>Zona</li>
+        <li>Vereda</li>
+    </ul>
+
+    <ul class="rows" *ngFor="let location of mockDb.mockLocations">
+        <li class="data-opacity limitChar">
+            {{location.id}}
+        </li>
+        <li class="opacity">
+            {{location.departamento}}
+        </li>
+        <li class="opacity">
+            {{location.ciudad}}
+        </li>
+        <li class="opacity">
+            {{location.zona}}
+        </li>
+        <li class="limitChar">
+            {{location.vereda}}
+        </li>
+        
+        <li>
+            <button class="button btn-lg" routerLink='/admin/edit-location'><i></i>Editar</button>
+        </li>
+        <li>
+            <button class=" btn-danger btn-lg buttonDelete" routerLink='/admin/delete-location'><i></i>Eliminar</button>
+        </li>
+    </ul>
+</div>
