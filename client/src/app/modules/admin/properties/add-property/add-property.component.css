@@ -1,5 +1,15 @@
-.button {
+.buttonAdd {
   background-color: var(--color-1); /* Green */
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -7,4 +17,5 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+
 }

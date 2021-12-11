@@ -1,1 +1,39 @@
-<p>delete-user works!</p>
+<div class="main-card mb-4">
+  <div class="card-body">
+
+    <form id="signupForm" class="col-md-10 mx-auto" action="/">
+      <div class="form-group">
+        <h1 class="card-title">Eliminar Usuario</h1>
+      </div>
+      <div class="form-group">
+        <label for="nombres">Nombres</label>
+        <div>
+          <input type="text" placeholder="Nombres" id="departamento" ng-model="formData.nombres" size="50" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="apellidos">Apellidos</label>
+        <div>
+          <input type="text" placeholder="Apellidos" ng-model="formData.apellidos" size="50" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Telefono</label>
+        <div>
+          <input type="text" placeholder="Número telefónico" ng-model="formData.telefono" size="50" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <div>
+          <input type="text" placeholder="Correo electrónico" ng-model="formData.email" size="50" />
+        </div>
+      </div>
+      <br>
+      <div class="form-group">
+        <button class="btn btn-primary btn-lg btn-danger buttonDelete">Eliminar</button>
+        <button class="btn btn-primary btn-lg button" routerLink='/admin/get-all-users'>Regresar</button>
+      </div>
+    </form>
+  </div>
+</div>

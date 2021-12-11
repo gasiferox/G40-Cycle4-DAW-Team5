@@ -1,1 +1,72 @@
-<p>get-all-properties works!</p>
+<div class="header">
+    <div class="property">
+        <div class="property-icon">
+            <i class="uil uil-property"></i>
+        </div>
+    </div>
+    <div class="content-text">
+        <div class="small-text">Administrador</div>
+        <h1 class="title">Inmuebles</h1>
+        <h5 class="sub-title">Lista de Inmuebles <span class="count-properties">Registrados al 2021</span> </h5>
+        
+    </div>
+</div>
+<fieldset>
+    <button class="button btn-primary btn-lg Addbutton right" routerLink='/admin/add-property'><i></i>Adicionar Inmueble</button>
+    <input type="text action" placeholder="Buscar.." class="right">
+</fieldset>
+
+
+<div class="body">
+    <ul class="table-header">
+        <li>id</li>
+        <li>Tipo</li>
+        <li>Ubicación</li>
+        <li>Área</li>
+        <li>Precio</li>
+        <li>Habitaciones</li>
+        <li>Baños</li>
+        <li>Parqueadero</li>
+        <li>Descripción</li>
+        <li>Imágenes</li>
+    </ul>
+
+    <ul class="rows" *ngFor="let property of mockDb.mockProperties">
+        <li class="data-opacity limitChar">
+            {{property.id}}
+        </li>
+        <li class="opacity">
+            {{property.tipo}}
+        </li>
+        <li class="opacity">
+            {{property.ubicacion}}
+        </li>
+        <li class="opacity">
+            {{property.area}}
+        </li>
+        <li class="limitChar">
+            {{property.precio}}
+        </li>
+        <li class="limitChar">
+            {{property.habitaciones}}
+        </li>
+        <li class="limitChar">
+            {{property.banos}}
+        </li>
+        <li class="limitChar">
+            {{property.parqueadero}}
+        </li>
+        <li class="limitChar">
+            {{property.descripcion}}
+        </li>
+        <li class="limitChar">
+            {{property.imagenes}}
+        </li>
+        <li>
+            <button class="button btn-lg" routerLink='/admin/edit-property'><i></i>Editar</button>
+        </li>
+        <li>
+            <button class=" btn-danger btn-lg buttonDelete" routerLink='/admin/delete-property'><i></i>Eliminar</button>
+        </li>
+    </ul>
+</div>

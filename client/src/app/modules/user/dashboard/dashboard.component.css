@@ -4452,7 +4452,7 @@ input[type="submit"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(211, 222, 231);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -9350,9 +9350,9 @@ a.text-dark:hover {
 }
 .text-hide {
   font: 0/0 a;
-  color: transparent;
+  color: blue;
   text-shadow: none;
-  background-color: transparent;
+  background-color: white ;
   border: 0;
 }
 .text-decoration-none {

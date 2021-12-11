@@ -4,6 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -44,7 +45,7 @@
 }
 html {
   font-family: sans-serif;
-  line-height: 1.15;
+  line-height: 5.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -68,7 +69,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #081011;
   text-align: left;
   background-color: #fff;
 }
@@ -135,7 +136,7 @@ strong {
   font-weight: bolder;
 }
 small {
-  font-size: 80%;
+  font-size: 100%;
 }
 sub,
 sup {
@@ -474,7 +475,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #212529;
+  color: #17a2b1;
 }
 pre code {
   font-size: inherit;
@@ -1991,7 +1992,7 @@ pre code {
 }
 select.form-control:focus::-ms-value {
   color: #495057;
-  background-color: #fff;
+  background-color: rgb(137, 201, 231);
 }
 .form-control-file,
 .form-control-range {
@@ -9450,3 +9451,6 @@ a.text-dark:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+.cardbody-color{
+  background-color: #c4dbe2;
+}

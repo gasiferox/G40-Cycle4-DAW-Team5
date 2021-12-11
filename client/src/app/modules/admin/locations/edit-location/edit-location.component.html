@@ -1,1 +1,36 @@
-<p>edit-location works!</p>
+<div class="main-card mb-4">
+    <div class="card-body">
+        <ul>
+            <form id="signupForm" class="col-md-10 mx-auto" action="/">
+                <div class="form-group">
+                    <h1 class="card-title">Editar Ubicacion</h1>
+                </div>
+                <br>
+                <label for="departamento">Departamento</label>
+                <br>
+                <input type="text" placeholder="Departamento" id="departamento" ng-model="formData.departamento"
+                    size="50"><br>
+
+                <label for="ciudad">Ciudad</label><br>
+                <input type="text" placeholder="Ciudad" ng-model="formData.ciudad" size="50"><br>
+
+                <label for="zona">Zona</label><br>
+                <select id="zona" ng-model="formData.zona">
+                    <option selected disabled>Zona</option>
+                    <option value="norte">Norte</option>
+                    <option value="sur">Sur</option>
+                    <option value="oriente">Oriente</option>
+                    <option value="occidente">Occidente</option>
+                </select><br>
+
+                <label for="vereda">Vereda</label><br>
+                <input type="text" placeholder="Vereda" ng-model="formData.vereda" size="50"><br><br>
+
+                <div>
+                    <button class="btn btn-primary btn-lg button">Editar</button>
+                    <button class="btn btn-primary btn-lg buttonEdit"  routerLink= '/admin/get-all-locations'>Regresar</button>
+                </div>
+            </form>
+        </ul>
+    </div>
+</div>

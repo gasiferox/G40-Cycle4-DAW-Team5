@@ -68,9 +68,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #8fcce4;
   text-align: left;
-  background-color: #fff;
+  background-color: rgb(160, 226, 221);
 }
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -474,7 +474,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: #212529;
+  color: #7ebbe4;
 }
 pre code {
   font-size: inherit;
@@ -9350,7 +9350,7 @@ a.text-dark:hover {
 }
 .text-hide {
   font: 0/0 a;
-  color: transparent;
+  color: white;
   text-shadow: none;
   background-color: transparent;
   border: 0;
@@ -9450,3 +9450,7 @@ a.text-dark:hover {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+.cardbody-color{
+  background-color: #c4dbe2;
+}

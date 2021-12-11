@@ -25,14 +25,6 @@ export class CrudComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.mainMenu.contacto = [
-      {
-        name: 'Botones',
-        icon: 'uil-plus',
-        router: ['/', 'admin', 'contacto']
-      },
-    ]
-
 
     this.mainMenu.userOptions = [
       {
@@ -40,11 +32,7 @@ export class CrudComponent implements OnInit {
         icon: 'uil-plus',
         router: ['/', 'admin', 'add-user']
       },
-      /* {
-        name: 'Listar Usuario por Id',
-        icon: 'uil-list-ol',
-        router: ['/', 'admin', 'get-user-by-id']
-      }, */
+      
       {
         name: 'Listar Usuarios',
         icon: 'uil-list-ol',
@@ -120,15 +108,5 @@ export class CrudComponent implements OnInit {
 
   }
 
-  /* goTo($event: any): void {
-    this.router.navigate(['/', 'admin'], {
-      queryParams: {
-        key1: 'value1',
-        key2: 'value2',
-        key3: 'value3'
-      }
-    })
-    console.log($event)
-  } */
 
 }
