@@ -1,6 +1,12 @@
 const PORT = process.env.PORT || 7500
 const express = require('express')
 const app = express()
+const cors = require('cors')
+/* const corsOptions ={
+    origin:'http://localhost:7500', 
+    credentials:true,            //access-control-allow-credentials:true
+    optionSuccessStatus:200
+} */
 const colors = require('colors')
 const mongoose = require('mongoose')
 require('dotenv').config()
@@ -26,6 +32,9 @@ app.use(express.static('src'))
 app.use('/api', userRoutes)
 app.use('/api', locationRoutes)
 app.use('/api', propertyRoutes)
+app.use(cors({
+    origin: "*"
+}))
 /* Allowing connect from proxy */
 /* app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
@@ -43,7 +52,16 @@ app.get('/', (req, res) => {
     fs.createReadStream('./src/index.html').pipe(res)
 }) */
 
+app.get('/', (req, res) => {
+    res.send({ status: 'oki!' })
+})
+
+app.get('/users', (req, res) => {
+    res.send({ status: 'ok!' })
+})
+
 // Server launch
 app.listen(PORT, () => {
     console.log(colors.rainbow("Server running on port " + PORT))
+    console.log(colors.bgYellow.black(`API endpoint --> http://localhost:${PORT}/api/`))
 })

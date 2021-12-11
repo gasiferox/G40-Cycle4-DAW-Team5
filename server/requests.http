@@ -8,17 +8,18 @@ POST http://localhost:7500/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "nombres": "Gustavo2",
-    "apellidos": "Romero2",
-    "documento": "78965452631",
-    "telefono": "321456789",
-    "email": "gasifero@gmail.com",
+    "nombres": "Leonardo",
+    "apellidos": "Jiménez",
+    "documento": "1031140189",
+    "telefono": "3183540367",
+    "email": "ljim230@gmail.com",
     "clave": "123456",
-    "rol": "Administrador"
+    "rol": "Administrador",
+    "imagen": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
 }
 
 ### DELETE USER
-DELETE http://localhost:7500/api/users/61901c39084ce5ff87b7e063 HTTP/1.1
+DELETE http://localhost:7500/api/users/61986d4ff818084bbf5de2f1 HTTP/1.1
 
 ### LOCATIONS ###
 

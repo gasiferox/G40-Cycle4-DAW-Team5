@@ -28,6 +28,10 @@ const userSchema = mongoose.Schema({
     rol: {
         type: String,
         required: true
+    },
+    imagen: {
+        type: String,
+        requided: false
     }
 })
 

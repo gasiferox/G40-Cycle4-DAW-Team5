@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AddLocationComponent } from './locations/add-location/add-location.component';
-import { DeleteLocationComponent } from './locations/delete-location/delete-location.component';
-import { EditLocationComponent } from './locations/edit-location/edit-location.component';
-import { GetAllLocationsComponent } from './locations/get-all-locations/get-all-locations.component';
+import { AdminComponent } from './admin/admin.component';
+import { AddLocationComponent } from './locations/pages/add-location/add-location.component';
+import { DeleteLocationComponent } from './locations/pages/delete-location/delete-location.component';
+import { EditLocationComponent } from './locations/pages/edit-location/edit-location.component';
+import { GetAllLocationsComponent } from './locations/pages/get-all-locations/get-all-locations.component';
 import { AddPropertyComponent } from './properties/add-property/add-property.component';
 import { DeletePropertyComponent } from './properties/delete-property/delete-property.component';
 import { EditPropertyComponent } from './properties/edit-property/edit-property.component';
@@ -14,6 +15,10 @@ import { EditUserComponent } from './users/edit-user/edit-user.component';
 import { GetAllUsersComponent } from './users/get-all-users/get-all-users.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: AdminComponent
+  },
   {
     path: 'add-user',
     component: AddUserComponent

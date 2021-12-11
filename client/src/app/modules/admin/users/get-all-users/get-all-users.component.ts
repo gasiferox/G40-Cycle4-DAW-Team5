@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { UserModel } from '@core/models/users.model';
 import { UserService } from '@modules/admin/services/user.service';
 
 @Component({
@@ -8,17 +9,17 @@ import { UserService } from '@modules/admin/services/user.service';
 })
 export class GetAllUsersComponent implements OnInit {
 
-  mockDb: {
+  /* mockDb: {
     mockUsers: Array<any>, mockLocations: Array<any>, mockProperties: Array<any>
-  } = { mockUsers: [], mockLocations: [], mockProperties: [] }
+  } = { mockUsers: [], mockLocations: [], mockProperties: [] } */
+
+  usersDB: Array<UserModel> = []
 
   constructor(private _userService: UserService) { }
 
   ngOnInit(): void {
 
-    this._userService.getAllUsers$().subscribe(response => {console.log('Respuesta del server', response)})
-
-    this.mockDb.mockUsers = [
+    /* this.mockDb.mockUsers = [
       {
         id: '000000000001',
         image: 'https://avatars.githubusercontent.com/u/31348478?s=400&u=3cf146c920fe67290e7e104eb24a0a72eb2bd30f&v=4',
@@ -76,7 +77,13 @@ export class GetAllUsersComponent implements OnInit {
         password: '7654321',
         rol: 'Administrador'
       }
-    ]
+    ] */
+
+    this._userService.getAllUsers$()
+    .subscribe((response: UserModel[]) => {
+      this.usersDB = response
+      console.log('-----> :) :)', response)
+    })
 
   }
 

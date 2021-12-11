@@ -17,98 +17,34 @@
 </div> -->
 
 
-<div class="wrapper hover-collapse">
-  <!-- top navigation bar -->
-  <div class="top-navbar">
-    <!-- logo -->
-    <div class="logo">The Assemblers</div>
+<header class="p-3 bg-success text-white">
 
-    <!-- menu button -->
-    <div class="menu">
-      <div class="hamburger">
-        <i class="uil uil-bars"></i>
-      </div>
-    </div>
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+      </a>
 
-  </div>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-left mb-md-0">
+        <!-- <button type="button" class="btn btn-success"[routerLink]="item.router" *ngFor="let item of Menu.contacto">Contacto</button> -->
 
-  <!-- sidebar -->
-  <div class="sidebar">
-    <div class="sidebar-inner">
-      <ul class="no-bullets">
-        <li><a href=""><span class="icon"><i class="uil uil-qrcode-scan"></i></span><span
-              class="text">Dashboard</span></a></li>
-        <li><a href=""><span class="icon"><i class="uil uil-link"></i></span><span class="text">Shortcut</span></a></li>
-        <li><a href=""><span class="icon"><i class="uil uil-eye"></i></span><span class="text">Overview</span></a></li>
-        <li><a href=""><span class="icon"><i class="uil uil-book"></i></span><span class="text">Event</span></a></li>
-        <li><a href=""><span class="icon"><i class="uil uil-question-circle"></i></span><span
-              class="text">About</span></a></li>
-        <li><a href=""><span class="icon"><i class="uil uil-pen"></i></span><span class="text">Service</span></a></li>
-        <li><a href=""><span class="icon"><i class="uil uil-card-atm"></i></span><span class="text">contact</span></a>
-        </li>
+        <li><a [routerLink]="item.router" *ngFor="let item of Menu.dashboard" class="nav-link px-2 text-white">Home</a></li>
+        <li><a [routerLink]="item.router" *ngFor="let item of Menu.contacto" class="nav-link px-2 text-white">Contacto</a></li>
+        <li><a [routerLink]="item.router" *ngFor="let item of Menu.acerca" class="nav-link px-2 text-white">Acerca</a></li>
+        <li><a [routerLink]="item.router" *ngFor="let item of Menu.crud" class="nav-link px-2 text-white">Gestion de Inmobiliaria</a></li>
+
       </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <button type="button" class="btn btn-outline-light me-2" [routerLink]="item.router" *ngFor="let item of Menu.login">Login</button>
+        <button type="button" class="btn btn-warning" [routerLink]="item.router" *ngFor="let item of Menu.register">Sign-up</button>
+      </div>
+
     </div>
+   </div>
 
-  </div>
-</div>
-
-<!-- now active button using TS -->
-<script type="text/javascript">
-
-  /* Define the constants of the class functions */
-  var li_items = document.querySelectorAll(".sidebar ul li")
-  var hamburger = document.querySelector(".hamburger")
-  var wrapper = document.querySelector(".wrapper")
-
-  /* What will change if the mouse hover the sidebar */
-  li_items.forEach((li_item) => {
-    li_item.addEventListener("mouseenter", () => {
-      /* Have already style information about hover-collapse */
-      li_item.closest(".wrapper").classList.remove("hover-collapse")
-    })
-  })
-
-  li_items.forEach((li_item) => {
-    li_item.addEventListener("mouseleave", () => {
-      /* Have already style information about hover-collapse */
-      li_item.closest(".wrapper").classList.add("hover-collapse")
-    })
-  })
-
-  /* To execute the burger button */
-  hamburger.addEventListener("click", () => {
-    hamburger.closest('.wrapper').classList.toggle('hover-collapse')
-  })
-
-</script>
-
-
-<!-- now active button using TS -->
-<script type="text/typescript">
-
-  /* Define the constants of the class functions */
-  var li_items = document.querySelectorAll(".sidebar ul li")
-  var hamburger = document.querySelector(".hamburger")
-  var wrapper = document.querySelector(".wrapper")
-
-  /* What will change if the mouse hover the sidebar */
-  li_items.forEach((li_item) => {
-    li_item.addEventListener("mouseenter", () => {
-      /* Have already style information about hover-collapse */
-      li_item.closest(".wrapper").classList.remove("hover-collapse")
-    })
-  })
-
-  li_items.forEach((li_item) => {
-    li_item.addEventListener("mouseleave", () => {
-      /* Have already style information about hover-collapse */
-      li_item.closest(".wrapper").classList.add("hover-collapse")
-    })
-  })
-
-  /* To execute the burger button */
-  hamburger.addEventListener("click", () => {
-    hamburger.closest('.wrapper').classList.toggle('hover-collapse')
-  })
-
-</script>
+</header>
