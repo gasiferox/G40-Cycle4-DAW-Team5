@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,8 +18,14 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+<<<<<<< HEAD
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.1",
+=======
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

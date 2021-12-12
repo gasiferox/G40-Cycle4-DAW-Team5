@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
+=======
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
 
 @Component({
   selector: 'app-side-bar-home',
@@ -8,6 +11,7 @@ import { Router } from '@angular/router';
 })
 export class SideBarHomeComponent implements OnInit {
 
+<<<<<<< HEAD
   mainMenu: {
     userOptions: Array<any>,
     locationOptions: Array<any>,
@@ -120,4 +124,11 @@ export class SideBarHomeComponent implements OnInit {
     console.log($event)
   } */
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
 }

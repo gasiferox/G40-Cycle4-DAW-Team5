@@ -1,5 +1,6 @@
 <div class="get-all-users-header">
   <div class="user">
+<<<<<<< HEAD
       <div class="user-icon">
           <i class="uil uil-user"></i>
       </div>
@@ -14,21 +15,53 @@
 <div class="get-all-users-body">
   <ul class="get-all-users-table-header">
     <li>id</li>
+=======
+    <div class="user-icon">
+      <i class="uil uil-user"></i>
+    </div>
+  </div>
+  <div class="content-text">
+    <div class="small-text">Administrador</div>
+    <h1 class="title">Usuarios</h1>
+    <h5 class="sub-title">Lista de usuarios <span class="count-users">Registrados al 2021</span> </h5>
+  </div>
+</div>
+
+<fieldset>
+  <button class="button btn-primary btn-lg Addbutton right" routerLink='/admin/add-user'><i></i>Adicionar Usuario</button>
+  <input type="text action" placeholder="Buscar.." class="right">
+</fieldset>
+
+<div class="get-all-users-body">
+  <ul class="get-all-users-table-header">
+    <li>id</li>
+    <li>Imagen</li>
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     <li>Nombres</li>
     <li>Apellidos</li>
     <li>Documento</li>
     <li>Teléfono</li>
     <li>e-mail</li>
     <li>Clave</li>
+<<<<<<< HEAD
   </ul>
 
   <ul class="get-all-users-rows" *ngFor="let user of mockDb.mockUsers">
     <li class="user-data-opacity limitChar">
       {{user.id}}
+=======
+    <li>Rol</li>
+  </ul>
+
+  <ul class="get-all-users-rows" *ngFor="let user of usersDB">
+    <li class="user-data-opacity limitChar">
+      {{user._id}}
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     </li>
     <li class="user-data-opacity">
       <ng-container *ngTemplateOutlet="userImageSection; context:{user:user}"></ng-container>
     </li>
+<<<<<<< HEAD
     <li class="user-data-opacity">
       {{user.lastName}}
     </li>
@@ -37,12 +70,38 @@
     </li>
     <li class="user-data-opacity">
       {{user.phone}}
+=======
+    <!-- <li class="user-data-opacity">
+      {{user.nombres}}
+    </li> -->
+    <li class="user-data-opacity">
+      {{user.apellidos}}
+    </li>
+    <li class="user-data-opacity">
+      {{user.documento}}
+    </li>
+    <li class="user-data-opacity">
+      {{user.telefono}}
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     </li>
     <li class="user-data-opacity limitChar">
       {{user.email}}
     </li>
     <li class="user-data-opacity limitChar">
+<<<<<<< HEAD
       {{user.password}}
+=======
+      {{user.clave}}
+    </li>
+    <li class="user-data-opacity limitChar">
+      {{user.rol}}
+    </li>
+    <li>
+      <button class="button btn-lg" routerLink='/admin/edit-user'><i></i>Editar</button>
+    </li>
+    <li>
+      <button class=" btn-danger btn-lg buttonDelete" routerLink='/admin/delete-user'><i></i>Eliminar</button>
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     </li>
   </ul>
 </div>
@@ -51,9 +110,15 @@
 <ng-template #userImageSection let-user="user">
 
   <div class="user-image-section">
+<<<<<<< HEAD
     <img appImgBroken class="user-image" [src]="user.image" [alt]="">
     <div class="user-info">
       <div class="user-name">{{user.name}}</div>
+=======
+    <img appImgBroken class="user-image" [src]="user.imagen" [alt]="">
+    <div class="user-info">
+      <div class="user-name">{{user.nombres}}</div>
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
       <!-- <div class="user-lastName">{{user.lastName}}</div> -->
     </div>
   </div>

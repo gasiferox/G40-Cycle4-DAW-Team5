@@ -12,12 +12,22 @@ export class HeaderComponent implements OnInit {
     contacto: Array<any>,
     acerca: Array<any>,
     dashboard: Array<any>,
+<<<<<<< HEAD
     loginpage: Array<any>,
+=======
+    crud: Array<any>,
+    login: Array<any>,
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     register: Array<any>
   } = { contacto: [],
     acerca: [],
     dashboard: [],
+<<<<<<< HEAD
     loginpage: [],
+=======
+    crud: [],
+    login: [],
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     register: []}
 
 
@@ -46,6 +56,7 @@ export class HeaderComponent implements OnInit {
         name: 'Dashboard',
         icon: 'uil-plus',
         router: ['/', 'admin', 'dashboard']
+<<<<<<< HEAD
       }
     ]
     this.Menu.loginpage = [
@@ -53,6 +64,22 @@ export class HeaderComponent implements OnInit {
         name: 'loginpage',
         icon: 'uil-plus',
         router: ['/', 'admin', 'loginpage']
+=======
+      },
+    ]
+    this.Menu.crud = [
+      {
+        name: 'Crud',
+        icon: 'uil-plus',
+        router: ['/', 'admin', 'crud']
+      },
+    ]
+    this.Menu.login = [
+      {
+        name: 'login',
+        icon: 'uil-plus',
+        router: ['/', 'admin', 'login']
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
       }
     ]
       this.Menu.register = [
@@ -65,6 +92,7 @@ export class HeaderComponent implements OnInit {
 
   }
 
+<<<<<<< HEAD
   /* goTo($event: any): void {
     this.router.navigate(['/', 'admin'], {
       queryParams: {
@@ -76,4 +104,6 @@ export class HeaderComponent implements OnInit {
     console.log($event)
   } */
 
+=======
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
 }

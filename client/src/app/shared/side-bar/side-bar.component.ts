@@ -9,12 +9,19 @@ import { Router } from '@angular/router';
 export class SideBarComponent implements OnInit {
 
   mainMenu: {
+<<<<<<< HEAD
     contacto: Array<any>,
     userOptions: Array<any>,
     locationOptions: Array<any>,
     propertyOptions: Array<any>
   } = { contacto: [],
     userOptions: [],
+=======
+    userOptions: Array<any>,
+    locationOptions: Array<any>,
+    propertyOptions: Array<any>
+  } = { userOptions: [],
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     locationOptions: [],
     propertyOptions: []}
 
@@ -25,6 +32,7 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
 
+<<<<<<< HEAD
     this.mainMenu.contacto = [
       {
         name: 'Botones',
@@ -34,6 +42,8 @@ export class SideBarComponent implements OnInit {
     ]
 
 
+=======
+>>>>>>> 50f81e79f56e82bcd5f320f39e367dc73311a041
     this.mainMenu.userOptions = [
       {
         name: 'Agregar Usuario',
