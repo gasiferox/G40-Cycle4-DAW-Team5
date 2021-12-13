@@ -24,6 +24,14 @@ const userSchema = mongoose.Schema({
     clave: {
         type: String,
         required: true
+    },
+    rol: {
+        type: String,
+        required: true
+    },
+    imagen: {
+        type: String,
+        requided: false
     }
 })
 

@@ -1,4 +1,3 @@
-<div class="container">
 <div class="get-all-users-header">
   <div class="user">
     <div class="user-icon">
@@ -20,35 +19,43 @@
 <div class="get-all-users-body">
   <ul class="get-all-users-table-header">
     <li>id</li>
+    <li>Imagen</li>
     <li>Nombres</li>
     <li>Apellidos</li>
     <li>Documento</li>
     <li>Teléfono</li>
     <li>e-mail</li>
     <li>Clave</li>
+    <li>Rol</li>
   </ul>
 
-  <ul class="get-all-users-rows" *ngFor="let user of mockDb.mockUsers">
+  <ul class="get-all-users-rows" *ngFor="let user of usersDB">
     <li class="user-data-opacity limitChar">
-      {{user.id}}
+      {{user._id}}
     </li>
     <li class="user-data-opacity">
       <ng-container *ngTemplateOutlet="userImageSection; context:{user:user}"></ng-container>
     </li>
+    <!-- <li class="user-data-opacity">
+      {{user.nombres}}
+    </li> -->
     <li class="user-data-opacity">
-      {{user.lastName}}
+      {{user.apellidos}}
     </li>
     <li class="user-data-opacity">
-      {{user.document}}
+      {{user.documento}}
     </li>
     <li class="user-data-opacity">
-      {{user.phone}}
+      {{user.telefono}}
     </li>
     <li class="user-data-opacity limitChar">
       {{user.email}}
     </li>
     <li class="user-data-opacity limitChar">
-      {{user.password}}
+      {{user.clave}}
+    </li>
+    <li class="user-data-opacity limitChar">
+      {{user.rol}}
     </li>
     <li>
       <button class="button btn-lg" routerLink='/admin/edit-user'><i></i>Editar</button>
@@ -63,9 +70,9 @@
 <ng-template #userImageSection let-user="user">
 
   <div class="user-image-section">
-    <img appImgBroken class="user-image" [src]="user.image" [alt]="">
+    <img appImgBroken class="user-image" [src]="user.imagen" [alt]="">
     <div class="user-info">
-      <div class="user-name">{{user.name}}</div>
+      <div class="user-name">{{user.nombres}}</div>
       <!-- <div class="user-lastName">{{user.lastName}}</div> -->
     </div>
   </div>
