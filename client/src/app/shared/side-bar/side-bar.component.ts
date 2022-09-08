@@ -30,7 +30,7 @@ export class SideBarComponent implements OnInit {
         name: 'Botones',
         icon: 'uil-plus',
         router: ['/', 'admin', 'contacto']
-      },
+      }
     ]
 
 

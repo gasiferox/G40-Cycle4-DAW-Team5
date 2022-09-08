@@ -35,11 +35,13 @@ app.use('/api', propertyRoutes)
 app.use(cors({
     origin: "*"
 }))
-/* Allowing connect from proxy */
-/* app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-}) */
+/* Allowing connect from proxy to avoid cors error */
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
 
 // html invoke
 /* const fs = require('fs')

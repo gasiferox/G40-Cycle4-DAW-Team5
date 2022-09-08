@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
-  {
+  /* {
     path: 'login', //  http://localhost:4200/auth/login
     component: LoginComponent
   },
@@ -19,6 +19,15 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'auth/register'
+  } */
+  {
+    path: 'auth',
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent
+      }
+    ]
   }
 ];
 

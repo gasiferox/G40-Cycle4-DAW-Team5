@@ -4,36 +4,23 @@
 POST http://localhost:7500/api/users HTTP/1.1
 Content-Type: application/json
 
+
 {
-    "nombres": "Gustavo",
+    "nombres": "David Alejadnro",
     "apellidos": "Romero",
-    "documento": "78965452631",
-    "telefono": "321456789",
-    "email": "gasifero@gmail.com",
-    "clave": "123456"
-},
-{
-    "nombres": "Maria Patricia",
-    "apellidos": "Guevara",
-    "documento": "45698745",
-    "telefono": "3214569874",
-    "email": "mariapatricia@gmail.com",
-    "clave": "452147"
-},
-{
-    "nombres": "Leonardo",
-    "apellidos": "Rivera",
-    "documento": "6543982",
-    "telefono": "786453",
-    "email": "leoil@gmail.com",
-    "clave": "736352"
+    "documento": "73632",
+    "telefono": "3333555",
+    "email": "alejo18@gmail.com",
+    "clave": "7366453",
+    "rol": "Broker",
+    "imagen": " "
 }
 
 ### GET ALL USERS
 GET http://localhost:7500/api/users HTTP/1.1
 
 ### GET USER BY ID
-GET http://localhost:7500/api/users/619008a559bfce4528bcdb72 HTTP/1.1
+GET http://localhost:7500/api/users/61b435093a19ba8f42088ef3 HTTP/1.1
 
 ### UPDATE A USER
 PUT http://localhost:7500/api/users/619008a559bfce4528bcdb72 HTTP/1.1
@@ -86,7 +73,7 @@ Content-Type: application/json
 
 
 ### DELETE LOCATION
-DELETE http://localhost:7500/api/locations/61907f659569dfc8b50001df HTTP/1.1
+DELETE http://localhost:7500/api/locations/61b7a9e32cb857063af4c548 HTTP/1.1
 
 
 
@@ -98,15 +85,15 @@ Content-Type: application/json
 
 
 {
-    "tipo": "casa",
-    "ubicacion": "61907f659569dfc8b50001df",
-    "area": 380,
-    "precio": 850000000,
-    "habitaciones": 4,
-    "baños": 4,
+    "tipo": "apartamento",
+    "ubicacion": "61907e619569dfc8b50001dd",
+    "area": 72,
+    "precio": 44500000,
+    "habitaciones": 2,
+    "baños": 2,
     "parqueadero": true,
-    "descripcion": "Casa campestre",
-    "imagenes": ""
+    "descripcion": "Apartamento Bella Suia",
+    "imagenes": "https://metrocuadrado.blob.core.windows.net/inmuebles/MC3297638/MC3297638_16_h.jpg"
 }
 
 
@@ -114,7 +101,7 @@ Content-Type: application/json
 GET http://localhost:7500/api/properties HTTP/1.1
 
 ### GET PROPERTIES BY ID
-GET http://localhost:7500/api/properties/61914ee3f8ce995637227351 HTTP/1.1
+GET http://localhost:7500/api/properties/6191cf6a4fb68dfdbac5230e HTTP/1.1
 
 ### UPDATE A PROPERTY
 PUT http://localhost:7500/api/properties/61914ee3f8ce995637227351 HTTP/1.1
